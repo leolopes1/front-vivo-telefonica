@@ -1,0 +1,13 @@
+<div class="containerButton">
+    <mat-button-toggle class="custom-toggle" [class.mat-button-toggle-checked]="showComponentCriacao" mat-button (click)="showComponentCriacao = true;showComponentControle = false">
+      Criação de usuário
+    </mat-button-toggle>
+    <mat-button-toggle class="custom-toggle" [class.mat-button-toggle-checked]="showComponentControle" mat-button (click)="showComponentControle = true;showComponentCriacao = false">
+      Controle de usuário
+    </mat-button-toggle>
+  </div>
+  
+  <div class="component-container">
+    <app-controle-usuario *ngIf="showComponentControle"></app-controle-usuario>
+    <app-criacao-usuario *ngIf="showComponentCriacao"></app-criacao-usuario>
+  </div>

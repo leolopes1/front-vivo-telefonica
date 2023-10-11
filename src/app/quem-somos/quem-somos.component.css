@@ -1,0 +1,79 @@
+.example-card {
+    max-width: 800px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+
+.content{
+    font-style: none;
+
+}
+
+.title{
+    text-decoration: underline;
+    size: 100px;
+    font-weight: 400;
+    color: #660099;
+}
+.containerPrincipal{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.containerText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+.containerDescricao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.titleText{
+    color: #660099;
+    width: 20%;
+}
+.descricao{
+    
+    margin-left: 18px;
+    width: 80%;
+}
+.imgColaborador{
+    border-radius: 20px;
+    width: 200px; ;
+    height: 200px;
+}
+.colunaCard{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+}
+.cardPhone{
+    background-color: #ff9900;
+    width: 220px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 6px 6px #660099;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+}
+.citacaoUsuario{
+    font-weight: 600;
+    padding: 10px;
+}
+.textPurple{
+    color: #660099;
+    font-weight:500 ;
+}
+

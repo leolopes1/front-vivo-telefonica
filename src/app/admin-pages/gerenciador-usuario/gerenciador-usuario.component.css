@@ -1,0 +1,11 @@
+.containerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.custom-toggle.mat-button-toggle-checked {
+    background-color: #660099;
+    color: white;
+}

@@ -1,0 +1,21 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    align-items: flex-start;
+    width: 200%;
+  }
+  
+/* Estilos para alinhar o conteúdo à esquerda da tela */
+.content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -400px; /* Adicione uma margem à esquerda para criar um espaço entre o conteúdo e a borda da tela */
+  }
+  
+  .form-container {
+    /* Adicione estilos adicionais para o container dos formulários, se necessário */
+  }

@@ -1,0 +1,48 @@
+<div class="containerPrincipal">
+  <div class="containerBackground">
+    <div>
+
+      <img src="/assets/human.login.png" alt="image" width="550" height="530"  >
+    </div>
+
+    <div>
+      <img src="/assets/login.png" alt="image" width="550" height="500"  >
+
+    </div>
+  </div>
+  <div class="overlay">
+    
+    <div class="containerPurple">
+      <div class="containerForm">
+        <div>
+          <h2 class="title">ACESSE AGORA</h2>
+        </div>
+        <div>
+          <div>
+            <mat-form-field>
+              <mat-label class="active">Usuário</mat-label>
+              <input [(ngModel)]="usuario.nome" matInput id="usuario" type="text" class="validate">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <mat-label class="active">Senha</mat-label>
+              <input [(ngModel)]="usuario.senha" matInput id="password" type="password" class="validate">
+            </mat-form-field>
+    
+          </div>
+          <div>
+            <button mat-raised-button class="button" name="action" (click)="fazerLogin()">Acessar
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <div class="imgVivinho">
+        
+        <img src="/assets/vivinho.png" alt="image" width="200" height="200">
+      </div>
+      
+    </div>
+  </div>
+</div>
