@@ -28,6 +28,8 @@ export class CriacaoUsuarioComponent implements OnInit {
   onSubmit(){
     console.log(this.formulario.value);
     
+    
+    
   }
 
 }

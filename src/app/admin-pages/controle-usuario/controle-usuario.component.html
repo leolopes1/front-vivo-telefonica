@@ -6,6 +6,20 @@
                 Controle de Usuário
             </p>
         </div>
+        <div class="containerBusca">
+            <p>Lista de Usuários</p>
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Pesquise por</mat-label>
+                  <input matInput  value="">
+                </mat-form-field>
+                <mat-icon>search </mat-icon>
+               
+              
+                
+              </form>
+            
+        </div>
 
         <div class="containerTable">
             <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -35,6 +49,22 @@
                 <ng-container matColumnDef="area">
                     <th mat-header-cell *matHeaderCellDef> Área </th>
                     <td mat-cell *matCellDef="let element"> {{element.area}} </td>
+                </ng-container>
+                <ng-container matColumnDef="resetSenha">
+                    <th mat-header-cell *matHeaderCellDef>Reset Senha</th>
+                    <td mat-cell *matCellDef="let element" class="iconPurple"> <mat-icon aria-hidden="false"  fontIcon="check_circle_outline"></mat-icon> </td>
+                </ng-container>
+                <ng-container matColumnDef="editar">
+                    <th mat-header-cell *matHeaderCellDef>Editar</th>
+                    <td mat-cell *matCellDef="let element" class="iconPurple"> <mat-icon aria-hidden="false" >edit</mat-icon> </td>
+                </ng-container>
+                <ng-container matColumnDef="ativar">
+                    <th mat-header-cell *matHeaderCellDef>Ativar</th>
+                    <td mat-cell *matCellDef="let element" class="iconPurple"> <mat-slide-toggle></mat-slide-toggle> </td>
+                </ng-container>
+                <ng-container matColumnDef="excluir">
+                    <th mat-header-cell *matHeaderCellDef>Excluir</th>
+                    <td mat-cell *matCellDef="let element" class="iconPurple"> <mat-icon aria-hidden="false" >delete_outline</mat-icon> </td>
                 </ng-container>
 
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

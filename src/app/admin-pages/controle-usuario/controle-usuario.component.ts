@@ -1,17 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {    } from '@angular/forms';
+import { User } from 'src/app/shared/model/user';
 
-export interface PeriodicElement {
-  nome: string;
-  email: string;
-  perfil: string;
-  area: string;
-}
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {email: 'Bia@gmail.com', nome: 'Bia dos Santos', perfil: 'adm', area: 'H'},
-  
- 
+
+const users: User[] = [
+  {_id:'1', nome:'Leticia',email:'Leticia@gmail.com.br',area:'Relacionamento',perfil:'usuario'},
+  {_id:'2', nome:'Maria',email:'maria@gmail.com.br',area:'Contabilidade',perfil:'Administrador'}
 ];
 
 @Component({
@@ -21,8 +16,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class ControleUsuarioComponent {
 
-  displayedColumns: string[] = ['email', 'nome', 'perfil', 'area'];
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['email', 'nome', 'perfil', 'area', 'resetSenha','editar','ativar','excluir'];
+  dataSource = users;
 
 
   constructor() {

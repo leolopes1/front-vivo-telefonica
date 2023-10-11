@@ -23,6 +23,7 @@ import { QuemSomosAdminComponent } from './admin-pages/quem-somos-admin/quem-som
 import { MatFormFieldModule } from '@angular/material/form-field'; 
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
@@ -58,6 +59,7 @@ import { CriacaoUsuarioComponent } from './admin-pages/criacao-usuario/criacao-u
     MatSidenavModule,
     MatMenuModule,
     MatToolbarModule,
+    MatSlideToggleModule,
     MatCardModule,
     MatCheckboxModule,
     MatIconModule,
