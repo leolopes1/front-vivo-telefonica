@@ -41,28 +41,15 @@
           <mat-list-item routerLink="#" routerLink="/homepage">
               <span>Fique por Dentro</span>
           </mat-list-item>
+          <mat-list-item routerLink="/projetos">
+              <span>Projetos</span>
+          </mat-list-item>
+          
           <mat-expansion-panel [class.mat-elevation-z0]="true">
-              <mat-expansion-panel-header>
-                  Projetos
-              </mat-expansion-panel-header>
-              <mat-nav-list>
-                  <a mat-list-item routerLink="#">
-                      Demandas internas
-                  </a>
-                  <a mat-list-item routerLink="#">
-                      Estruturantes
-                  </a>
-              </mat-nav-list>
-          </mat-expansion-panel>
-          <mat-expansion-panel [class.mat-elevation-z0]="true">
-              <mat-expansion-panel-header>
-                  Processos
-              </mat-expansion-panel-header>
-              <mat-nav-list>
-                  <a mat-list-item routerLink="#">Pareceres por assunto</a>
-                  <a mat-list-item routerLink="#">Mapeamento de billings</a>
-                  <a mat-list-item routerLink="#">Fluxo de análise de projetos</a>
-              </mat-nav-list>
+            <mat-nav-list>
+              <a mat-list-item routerLink="/projetos">Projetos</a>
+          </mat-nav-list>
+              
           </mat-expansion-panel>
           <mat-expansion-panel [class.mat-elevation-z0]="true">
               <mat-expansion-panel-header>

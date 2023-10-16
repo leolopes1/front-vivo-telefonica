@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "Leticia",
+      "perfil": "usuario",
+      "email": "leticia@gmail.com",
+      "area": "Departamento Pessoal"
+    }
+  ]
+  
+}
