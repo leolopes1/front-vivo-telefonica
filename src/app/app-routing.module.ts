@@ -9,7 +9,8 @@ import { AuthGuard } from './guards/auth.guard';
 import { FiquePorDentroComponent } from './fique-por-dentro/fique-por-dentro.component';
 import { ControleUsuarioComponent } from './admin-pages/controle-usuario/controle-usuario.component';
 import { GerenciadorUsuarioComponent } from './admin-pages/gerenciador-usuario/gerenciador-usuario.component';
-import { ProjetosComponent } from './projetos/projetos/projetos.component';
+import { ProjetosComponent } from './projetos/projetos.component';
+
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'update-quem-somos', component: QuemSomosAdminComponent,canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent},
   { path: 'gerenciador-usuarios', component:GerenciadorUsuarioComponent, canActivate: [AuthGuard]},
-  { path: 'projetos', component:ProjetosComponent },
+  { path: 'projetos', component:ProjetosComponent, },
+
   
 
 ];

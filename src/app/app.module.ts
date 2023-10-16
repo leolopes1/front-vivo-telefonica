@@ -37,6 +37,8 @@ import { ControleUsuarioComponent } from './admin-pages/controle-usuario/control
 import { FiquePorDentroComponent } from './fique-por-dentro/fique-por-dentro.component';
 import { GerenciadorUsuarioComponent } from './admin-pages/gerenciador-usuario/gerenciador-usuario.component';
 import { CriacaoUsuarioComponent } from './admin-pages/criacao-usuario/criacao-usuario.component';
+import { MaterialModule } from './material/material.module';
+import { ProjetosComponent } from './projetos/projetos.component';
 
 @NgModule({
   declarations: [ 
@@ -50,6 +52,7 @@ import { CriacaoUsuarioComponent } from './admin-pages/criacao-usuario/criacao-u
     FiquePorDentroComponent,
     GerenciadorUsuarioComponent,
     CriacaoUsuarioComponent,
+    ProjetosComponent,
   ],
   imports: [
     BrowserModule,
@@ -78,6 +81,7 @@ import { CriacaoUsuarioComponent } from './admin-pages/criacao-usuario/criacao-u
     MatCardModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    MaterialModule,
     RouterModule.forRoot([])
   ],
   providers: [DataService, AuthService,AuthGuard
