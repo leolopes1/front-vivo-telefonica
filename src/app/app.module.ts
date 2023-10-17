@@ -39,6 +39,7 @@ import { GerenciadorUsuarioComponent } from './admin-pages/gerenciador-usuario/g
 import { CriacaoUsuarioComponent } from './admin-pages/criacao-usuario/criacao-usuario.component';
 import { MaterialModule } from './material/material.module';
 import { ProjetosComponent } from './projetos/projetos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [ 
@@ -56,6 +57,7 @@ import { ProjetosComponent } from './projetos/projetos.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
     MatButtonModule,

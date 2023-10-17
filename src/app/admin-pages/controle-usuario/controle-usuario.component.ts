@@ -1,13 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {    } from '@angular/forms';
+import { UserService } from 'src/app/services/user.service';
 import { User } from 'src/app/shared/model/user';
-
-
-
-const users: User[] = [
-  {_id:'1', nome:'Leticia',email:'Leticia@gmail.com.br',area:'Relacionamento',perfil:'usuario'},
-  {_id:'2', nome:'Maria',email:'maria@gmail.com.br',area:'Contabilidade',perfil:'Administrador'}
-];
 
 @Component({
   selector: 'app-controle-usuario',
@@ -16,11 +10,27 @@ const users: User[] = [
 })
 export class ControleUsuarioComponent {
 
+  usuarios: User[] = [];
+  dataSource = this.usuarios;
   displayedColumns: string[] = ['email', 'nome', 'perfil', 'area', 'resetSenha','editar','ativar','excluir'];
-  dataSource = users;
 
 
-  constructor() {
+  ngOnInit() {
+    this.buscarUsuario();
+  }
+
+  constructor(private userService: UserService) {
+  }
+  buscarUsuario() {
+    this.userService.buscarUsuario().subscribe(
+      (resultados:User[]) => {
+        this.usuarios = resultados;
+        this.dataSource = this.usuarios;
+      },
+      (erro) => {
+        console.error('Erro ao buscar projetos:', erro);
+      }
+    );
   }
   
   

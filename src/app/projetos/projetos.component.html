@@ -14,17 +14,19 @@
         
         <div class="containerBusca">
             <p>Buscar Projeto</p>
-            <form class="example-form">
+            <form class="example-form" (ngSubmit)="buscar()">
                 <mat-form-field class="example-full-width">
                   <mat-label>ex. Sustentabilidade</mat-label>
-                  <input matInput  value="">
+                  <input matInput [(ngModel)]="nome">
                 </mat-form-field>
-                <mat-icon>search </mat-icon>
-               
-              
-                
+                <mat-icon (click)="buscar()"> search </mat-icon>
               </form>
             
         </div>
+    </div>
+    <div>
+        <mat-card class="card" *ngFor="let projeto of projetos">
+            <mat-card-content>{{ projeto.nome }}</mat-card-content>
+          </mat-card>
     </div>
 </div>
