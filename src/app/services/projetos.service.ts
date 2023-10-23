@@ -18,4 +18,8 @@ export class ProjetosService {
     const url = `http://localhost:3000/projetos?nome=${nome}`;
     return this.http.get<any[]>(url);
   }
+  buscarProjetosPorId(id: string): Observable<any[]> {
+    const url = `http://localhost:3000/projetos?id=${id}`;
+    return this.http.get<any[]>(url);
+  }
 }

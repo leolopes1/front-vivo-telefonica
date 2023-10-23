@@ -10,6 +10,7 @@ import { FiquePorDentroComponent } from './fique-por-dentro/fique-por-dentro.com
 import { ControleUsuarioComponent } from './admin-pages/controle-usuario/controle-usuario.component';
 import { GerenciadorUsuarioComponent } from './admin-pages/gerenciador-usuario/gerenciador-usuario.component';
 import { ProjetosComponent } from './projetos/projetos.component';
+import { ProjetosDetalheComponent } from './projetos-detalhe/projetos-detalhe.component';
 
 
 
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'gerenciador-usuarios', component:GerenciadorUsuarioComponent, canActivate: [AuthGuard]},
   { path: 'projetos', component:ProjetosComponent, },
+  { path: 'projetos/:id', component: ProjetosDetalheComponent, }
 
   
 

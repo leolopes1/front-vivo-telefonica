@@ -13,6 +13,13 @@
       "perfil": "Administrador",
       "email": "maria@gmail.com",
       "area": "Gerencia"
+    },
+    {
+      "id": 3,
+      "nome": "Cristiano",
+      "perfil": "usuario",
+      "email": "Cristiano@gmail.com",
+      "area": "Departamento Pessoal"
     }
   ],
   "projetos":[

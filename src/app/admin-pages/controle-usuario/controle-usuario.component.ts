@@ -1,38 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import {    } from '@angular/forms';
+import { MatTableDataSource } from '@angular/material/table';
 import { UserService } from 'src/app/services/user.service';
-import { User } from 'src/app/shared/model/user';
 
 @Component({
   selector: 'app-controle-usuario',
   templateUrl: './controle-usuario.component.html',
   styleUrls: ['./controle-usuario.component.css']
 })
-export class ControleUsuarioComponent {
+export class ControleUsuarioComponent implements OnInit {
+  usuarios: any[] = [];
+  dataSource = new MatTableDataSource<any>(this.usuarios);
+  displayedColumns: string[] = ['email', 'nome', 'perfil', 'area', 'resetSenha', 'editar', 'ativar', 'excluir'];
 
-  usuarios: User[] = [];
-  dataSource = this.usuarios;
-  displayedColumns: string[] = ['email', 'nome', 'perfil', 'area', 'resetSenha','editar','ativar','excluir'];
-
+  constructor(private userService: UserService) {}
 
   ngOnInit() {
     this.buscarUsuario();
   }
 
-  constructor(private userService: UserService) {
-  }
   buscarUsuario() {
     this.userService.buscarUsuario().subscribe(
-      (resultados:User[]) => {
+      (resultados: any[]) => {
         this.usuarios = resultados;
-        this.dataSource = this.usuarios;
+        this.dataSource.data = this.usuarios; // Atualize o dataSource.data com os dados
+        
+        
       },
       (erro) => {
-        console.error('Erro ao buscar projetos:', erro);
+        console.error('Erro ao buscar usuários:', erro);
       }
     );
   }
-  
-  
 }
-

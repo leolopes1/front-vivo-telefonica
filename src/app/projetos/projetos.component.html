@@ -11,22 +11,22 @@
 
     </div>
     <div>
-        
+
         <div class="containerBusca">
             <p>Buscar Projeto</p>
             <form class="example-form" (ngSubmit)="buscar()">
                 <mat-form-field class="example-full-width">
-                  <mat-label>ex. Sustentabilidade</mat-label>
-                  <input matInput [(ngModel)]="nome">
+                    <mat-label>ex. Sustentabilidade</mat-label>
+                    <input matInput [(ngModel)]="nome">
                 </mat-form-field>
                 <mat-icon (click)="buscar()"> search </mat-icon>
-              </form>
-            
+            </form>
+
         </div>
     </div>
     <div>
-        <mat-card class="card" *ngFor="let projeto of projetos">
+        <mat-card class="card" *ngFor="let projeto of projetos" [routerLink]="['/projetos', projeto.id]">
             <mat-card-content>{{ projeto.nome }}</mat-card-content>
-          </mat-card>
+        </mat-card>
     </div>
 </div>
