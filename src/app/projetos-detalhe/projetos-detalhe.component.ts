@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjetosService } from '../services/projetos.service';
 import { ActivatedRoute } from '@angular/router';
+import { Projeto } from '../shared/model/projeto';
 
 @Component({
   selector: 'app-projetos-detalhe',
@@ -8,7 +9,10 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./projetos-detalhe.component.css']
 })
 export class ProjetosDetalheComponent implements OnInit {
-  projeto: any = [];
+  projeto: Projeto = {
+    id: '',
+    nome: ''
+  } ;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,8 +25,6 @@ export class ProjetosDetalheComponent implements OnInit {
       if (projetoId) {
         this.projetoService.buscarProjetosPorId(projetoId).subscribe(projeto => {
           this.projeto = projeto;
-          console.log(projeto[0].nome);
-          
         });
       }
     });

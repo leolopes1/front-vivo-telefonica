@@ -26,15 +26,26 @@ export class ProjetosComponent {
       }
     );
   }
-  buscar() {
-    this.projetoService.buscarProjetosPorPalavra(this.nome).subscribe(
-      (resultados) => {
-        this.projetos = resultados;
-      },
-      (erro) => {
-        console.error('Erro na busca por palavra-chave:', erro);
-      }
-    );
+  // buscar() {
+  //   this.projetoService.buscarProjetosPorPalavra(this.nome).subscribe(
+  //     (resultados) => {
+  //       this.projetos = resultados;
+  //     },
+  //     (erro) => {
+  //       console.error('Erro na busca por palavra-chave:', erro);
+  //     }
+  //   );
+  // }
+  filtrarProjetos() {
+    if (this.nome) {
+      this.projetos = this.projetos.filter(projeto =>
+        projeto.nome.toLowerCase().startsWith(this.nome.toLowerCase())
+      );
+      console.log(this.nome);
+      
+    } else {
+      this.buscarProjetos(); // Se o campo de busca estiver vazio, recarregue todos os projetos
+    }
   }
   
 }

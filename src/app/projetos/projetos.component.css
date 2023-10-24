@@ -17,10 +17,9 @@
 .containerCentralizador {
     display: flex;
     margin-left: 60px;
-    margin-top: 20px;
     flex-direction: column;
     width: 90%;
-    height: fit-content;
+
     
 
 }
@@ -48,3 +47,6 @@
     
 
 }
+.searchBar {
+    width: 60%; /* Ajuste o valor conforme necessário */
+  }
