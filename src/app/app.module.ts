@@ -38,9 +38,12 @@ import { FiquePorDentroComponent } from './fique-por-dentro/fique-por-dentro.com
 import { GerenciadorUsuarioComponent } from './admin-pages/gerenciador-usuario/gerenciador-usuario.component';
 import { CriacaoUsuarioComponent } from './admin-pages/criacao-usuario/criacao-usuario.component';
 import { MaterialModule } from './material/material.module';
-import { ProjetosComponent } from './projetos/projetos.component';
+import { ProjetosComponent } from './admin-projetos/projetos/projetos.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProjetosDetalheComponent } from './projetos-detalhe/projetos-detalhe.component';
+import { ProjetosDetalheComponent } from './admin-projetos/projetos-detalhe/projetos-detalhe.component';
+import { CriarProjetoComponent } from './admin-projetos/criar-projeto/criar-projeto.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 @NgModule({
   declarations: [ 
@@ -56,6 +59,7 @@ import { ProjetosDetalheComponent } from './projetos-detalhe/projetos-detalhe.co
     CriacaoUsuarioComponent,
     ProjetosComponent,
     ProjetosDetalheComponent,
+    CriarProjetoComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,6 +73,7 @@ import { ProjetosDetalheComponent } from './projetos-detalhe/projetos-detalhe.co
     MatSlideToggleModule,
     MatCardModule,
     MatCheckboxModule,
+    CarouselModule,
     MatIconModule,
     MatFormFieldModule, // Add MatFormFieldModule to the imports array
     MatSelectModule, // Add MatSelectModule to the imports array
@@ -86,6 +91,7 @@ import { ProjetosDetalheComponent } from './projetos-detalhe/projetos-detalhe.co
     AppRoutingModule,
     ReactiveFormsModule,
     MaterialModule,
+    CarouselModule,
     RouterModule.forRoot([])
   ],
   providers: [DataService, AuthService,AuthGuard

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjetosService } from '../services/projetos.service';
+import { ProjetosService } from '../../services/projetos.service';
 import { ActivatedRoute } from '@angular/router';
-import { Projeto } from '../shared/model/projeto';
+import { Projeto } from '../../shared/model/projeto';
 
 @Component({
   selector: 'app-projetos-detalhe',

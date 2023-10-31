@@ -9,21 +9,23 @@ import { AuthGuard } from './guards/auth.guard';
 import { FiquePorDentroComponent } from './fique-por-dentro/fique-por-dentro.component';
 import { ControleUsuarioComponent } from './admin-pages/controle-usuario/controle-usuario.component';
 import { GerenciadorUsuarioComponent } from './admin-pages/gerenciador-usuario/gerenciador-usuario.component';
-import { ProjetosComponent } from './projetos/projetos.component';
-import { ProjetosDetalheComponent } from './projetos-detalhe/projetos-detalhe.component';
+import { ProjetosComponent } from './admin-projetos/projetos/projetos.component';
+import { ProjetosDetalheComponent } from './admin-projetos/projetos-detalhe/projetos-detalhe.component';
+import { CriarProjetoComponent } from './admin-projetos/criar-projeto/criar-projeto.component';
 
 
 
 const routes: Routes = [
   { path: '', component: QuemSomosComponent, canActivate: [AuthGuard] }, 
   { path: 'quem-somos', component: QuemSomosComponent, canActivate: [AuthGuard] }, 
-  { path: 'homepage', component: FiquePorDentroComponent,canActivate: [AuthGuard] },
+  { path: 'homepage', component: FiquePorDentroComponent },
   { path: 'user-admin', component: UserAdminComponent,canActivate: [AuthGuard]},
   { path: 'update-quem-somos', component: QuemSomosAdminComponent,canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent},
   { path: 'gerenciador-usuarios', component:GerenciadorUsuarioComponent, canActivate: [AuthGuard]},
   { path: 'projetos', component:ProjetosComponent, },
-  { path: 'projetos/:id', component: ProjetosDetalheComponent, }
+  { path: 'projetos/:id', component: ProjetosDetalheComponent, },
+  { path: 'criar-projeto', component: CriarProjetoComponent, }
 
   
 

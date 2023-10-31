@@ -1,0 +1,60 @@
+<div class="containerCentralizador">
+    <div class="containerForm">
+        <div class="containerText">
+            <img src="/assets/lapis.svg" width="45" height="45" alt="">
+            <p class="titulo">
+                Criação de Projeto
+            </p>
+        </div>
+
+        <form class="formCriarUsuário" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+            <div class="containerColuna">
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nome </mat-label>
+                    <input matInput placeholder="Digite seu nome" formControlName="nome">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Área </mat-label>
+                    <input matInput placeholder="Digite a área" formControlName="area">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Contato </mat-label>
+                    <input matInput placeholder="Digite o telefone" formControlName="contato">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email </mat-label>
+                    <input matInput placeholder="Digite o Email" formControlName="email">
+                </mat-form-field>
+            </div>
+            <div class="containerColuna">
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Usuário</mat-label>
+                    <input matInput placeholder="Digite seu nome" formControlName="usuario">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Senha</mat-label>
+                    <input matInput placeholder="Digite seu nome" formControlName="senha">
+                </mat-form-field>
+                <mat-form-field>
+
+                    <mat-label>Perfil</mat-label>
+                    <mat-select matNativeControl required formControlName="perfil">
+                        <mat-option value="usuario">Usuário</mat-option>
+                        <mat-option value="administrativo">Administrativo</mat-option>
+                        <mat-option value="avancado">Avançado</mat-option>
+
+                    </mat-select>
+                </mat-form-field>
+                <div class="containerButton">
+                    <button class="button" name="action" type="submit">Salvar
+                    </button>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
