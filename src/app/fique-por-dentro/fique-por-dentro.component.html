@@ -1,11 +1,28 @@
-<div>
-  <carousel>
-    <slide *ngFor="let slide of slides; let index = index">
-      <img [src]="slide.image" alt="Slide {{index + 1}}" class="image">
-      <div class="carousel-caption">
-        <h3>Slide {{index + 1}}</h3>
-        <p>{{slide.description}}</p>
+<div class="containerPrincipal">
+  <div>
+    <p class="textoPrincipal">Comunicados</p>
+  </div>
+  <div class="comunicadosContainer">
+    <div class="card" *ngFor="let card of cards" >
+      <img [src]="card.image" class="image" >
+    </div>
+
+  </div>
+  <div>
+    <p class="textoPrincipal">Notícias</p>
+    <a>Conheça nossos projetos por um futuro mais consciente e conectado </a>
+  </div>
+  <div class="noticiasContainer">
+    <div class="cardNoticia" *ngFor="let noticia of noticias" >
+      <div class="cardBackground">
+        <img [src]="noticia.image" class="imageNoticia">
       </div>
-    </slide>
-  </carousel>
+      <div >
+        <h3>{{ noticia.title }}</h3>
+        <p>{{ noticia.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
 </div>
