@@ -3,8 +3,13 @@
     <p class="textoPrincipal">Comunicados</p>
   </div>
   <div class="comunicadosContainer">
-    <div class="card" *ngFor="let card of cards" >
-      <img [src]="card.image" class="image" >
+    <div class="cardNoticia" *ngFor="let card of cards">
+      <div class="cardBackground" [style.background-image]="'url(' + card.image + ')'">
+        <div class="cardContent">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -13,15 +18,25 @@
     <a>Conheça nossos projetos por um futuro mais consciente e conectado </a>
   </div>
   <div class="noticiasContainer">
-    <div class="cardNoticia" *ngFor="let noticia of noticias" >
+    <!-- <div class="cardNoticia" *ngFor="let noticia of noticias" >
       <div class="cardBackground">
         <img [src]="noticia.image" class="imageNoticia">
       </div>
-      <div >
+      <div class="overlay">
         <h3>{{ noticia.title }}</h3>
         <p>{{ noticia.description }}</p>
       </div>
+    </div> -->
+    <div class="cardNoticia" *ngFor="let noticia of noticias">
+      <div class="cardBackground" [style.background-image]="'url(' + noticia.image + ')'">
+        <div class="cardContent">
+          <h3>{{ noticia.title }}</h3>
+          <p>{{ noticia.description }}</p>
+        </div>
+      </div>
     </div>
+
+
 
   </div>
 

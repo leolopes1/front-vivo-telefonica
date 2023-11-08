@@ -5,13 +5,20 @@
 .app-container {
 
   margin: 0;
+  min-height: 100%;
+  padding: 12px;
 }  
+
 .app-sidenav {
   width: 230px;
+  height: 100%;
+  
 }
 .app-sidenav-content {
   
   height: 100%;
+  overflow: hidden; /* Hide scrollbars */
+
   
 }
 
