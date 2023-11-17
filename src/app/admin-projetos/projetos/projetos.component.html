@@ -24,9 +24,15 @@
 
         </div>
     </div>
-    <div>
-        <mat-card class="card" *ngFor="let projeto of projetos" [routerLink]="['/projetos', projeto.id]">
-            <mat-card-content>{{ projeto.nome }}</mat-card-content>
+    <div class="containerCard"  *ngFor="let projeto of projetos" [routerLink]="['/projetos', projeto.id]">
+        <div class="containerStatus">
+            {{ projeto.status }}
+
+        </div>
+        <mat-card class="card" >
+            <mat-card-content> {{ projeto.nome }}</mat-card-content>
+            
         </mat-card>
+        
     </div>
 </div>

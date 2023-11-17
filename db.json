@@ -25,19 +25,24 @@
   "projetos":[
     {
       "id": 1,
-      "nome": "Projeto Sustentabilidade 6547-2 SP "
+      "nome": "Projeto Sustentabilidade 6547-2 SP ",
+      "status": "em andamento"
+
     },
     {
       "id": 2,
-      "nome": "Projeto de Sustentabilidade n°98764-4 SP - Shayenne xx xxx xxx"
+      "nome": "Projeto de Sustentabilidade n°98764-4 SP - Shayenne xx xxx xxx",
+      "status": "em andamento"
     },
     {
       "id": 3,
-      "nome": "Projeto de sustentabilidade da tecnologia"
+      "nome": "Projeto de sustentabilidade da tecnologia",
+      "status": "aguardando resposta"
     },
     {
       "id": 4,
-      "nome": "sustentabilidade"
+      "nome": "sustentabilidade",
+      "status": "em análise"
     }
   ]
   

@@ -12,6 +12,8 @@ import { GerenciadorUsuarioComponent } from './admin-pages/gerenciador-usuario/g
 import { ProjetosComponent } from './admin-projetos/projetos/projetos.component';
 import { ProjetosDetalheComponent } from './admin-projetos/projetos-detalhe/projetos-detalhe.component';
 import { CriarProjetoComponent } from './admin-projetos/criar-projeto/criar-projeto.component';
+import { CriacaoQuemSomosComponent } from './quem-somos-adm/criacao-quem-somos/criacao-quem-somos.component';
+import { ProjetosDuvidaComponent } from './admin-projetos/projetos-duvida/projetos-duvida.component';
 
 
 
@@ -25,7 +27,10 @@ const routes: Routes = [
   { path: 'gerenciador-usuarios', component:GerenciadorUsuarioComponent, canActivate: [AuthGuard]},
   { path: 'projetos', component:ProjetosComponent, },
   { path: 'projetos/:id', component: ProjetosDetalheComponent, },
-  { path: 'criar-projeto', component: CriarProjetoComponent, }
+  { path: 'criar-projeto', component: CriarProjetoComponent, },
+  { path: 'criar-biografia', component: CriacaoQuemSomosComponent, },
+  { path: 'projeto-duvida', component: ProjetosDuvidaComponent, }
+  
 
   
 

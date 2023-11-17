@@ -43,6 +43,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProjetosDetalheComponent } from './admin-projetos/projetos-detalhe/projetos-detalhe.component';
 import { CriarProjetoComponent } from './admin-projetos/criar-projeto/criar-projeto.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CriacaoQuemSomosComponent } from './quem-somos-adm/criacao-quem-somos/criacao-quem-somos.component';
+import { ProjetosDuvidaComponent } from './admin-projetos/projetos-duvida/projetos-duvida.component';
 
 
 @NgModule({
@@ -60,6 +62,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     ProjetosComponent,
     ProjetosDetalheComponent,
     CriarProjetoComponent,
+    CriacaoQuemSomosComponent,
+    ProjetosDuvidaComponent,
   ],
   imports: [
     BrowserModule,

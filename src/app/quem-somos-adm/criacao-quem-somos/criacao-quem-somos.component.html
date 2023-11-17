@@ -1,0 +1,35 @@
+<div class="containerCentralizador">
+    <div class="containerForm">
+        <div class="containerText">
+            <img src="/assets/lapis.svg" width="45" height="45" alt="">
+            <p class="titulo">
+                Criação de Quem Somos
+            </p>
+        </div>
+
+        <form class="formCriarUsuário" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+            <div class="containerColuna">
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nome </mat-label>
+                    <input matInput placeholder="Digite seu nome" formControlName="nome">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Descrição </mat-label>
+                    <input matInput placeholder="Digite a frase" formControlName="descricao">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Envie a Foto</mat-label>
+                    <input type="file" (change)="onFileSelected($event)" />
+                </mat-form-field>
+                
+                <div class="containerButton">
+                    <button class="button" name="action" type="submit">Salvar
+                    </button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</div>
