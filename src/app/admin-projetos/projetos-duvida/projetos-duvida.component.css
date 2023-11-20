@@ -116,4 +116,19 @@
 }
 .duvidaField{
     height: 100%;
+    white-space: pre-wrap;
+}
+.containerButton{
+    display: flex;
+    justify-content: center;
+}
+.button {
+    background-color:#660099;
+    color: #fafafa;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: medium;
+    border-color: #660099
+
 }
