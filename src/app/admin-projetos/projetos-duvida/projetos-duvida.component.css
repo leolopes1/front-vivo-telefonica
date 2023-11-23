@@ -117,6 +117,7 @@
 .duvidaField{
     height: 100%;
     white-space: pre-wrap;
+    
 }
 .containerButton{
     display: flex;

@@ -15,9 +15,57 @@
 
     </div>
     <div class="containerDetalhe">
-        <p>
-            Detalhes
-        </p>
+        <mat-card class="card">
+            <div class="campo">
+              <label>Nome do Projeto</label>
+              <span>{{ projeto.nome }}</span>
+            </div>
+      
+            <div class="campo">
+              <label>Classificação do projeto</label>
+              <!-- <span>{{ detalhes.classificacaoDoProjeto }}</span> -->
+              <span>Não P&S</span>
+            </div>
+      
+            <div class="campo">
+              <label>Data Início</label>
+              <!-- <span>{{ detalhes.dataInicio }}</span> -->
+              <span>17/05/2023</span>
+            </div>
+      
+            <div class="campo">
+              <label>Possui subprojeto?</label>
+              <!-- <span>{{ detalhes.possuiSubprojeto ? 'Sim' : 'Não' }}</span> -->
+              <span>Não</span>
+            </div>
+      
+            <div class="campo">
+              <label>Escopo do Projeto</label>
+              <!-- <span>{{ detalhes.escopoDoProjeto }}</span> -->
+              <span>Ajustar a contabilização do do Billing Kenan, detalhando a receita dos produtos nas interfaces (no caso dos SVAs e serviços digitais sera detalhado por parceiro), democratizando esse tipo de informação com esse detalhamento no SAP e automatizando a receita liquida por parceiro, gerando ganho com a diminuição do processo manual, agilidade no fechamento e maior precisão nas informações geradas para executivos.</span>
+
+            </div>
+            <div class="campo">
+              <label>Público alvo</label>
+              <!-- <span>{{ detalhes.escopoDoProjeto }}</span> -->
+            </div>
+            <div class="campo">
+              <label>Seguimento</label>
+              <!-- <span>{{ detalhes.escopoDoProjeto }}</span> -->
+            </div>
+            <div class="campo">
+              <label>Produtos</label>
+              <!-- <span>{{ detalhes.escopoDoProjeto }}</span> -->
+            </div>
+            <div class="campo">
+              <label>Projeto Faseado? </label>
+              <!-- <span>{{ detalhes.escopoDoProjeto }}</span> -->
+            </div>
+            <div class="campo">
+              <label>Titular do Faturamento</label>
+              <!-- <span>{{ detalhes.escopoDoProjeto }}</span> -->
+            </div>
+          </mat-card>
 
 
     </div>
