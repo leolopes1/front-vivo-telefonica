@@ -45,6 +45,7 @@ import { CriarProjetoComponent } from './admin-projetos/criar-projeto/criar-proj
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CriacaoQuemSomosComponent } from './quem-somos-adm/criacao-quem-somos/criacao-quem-somos.component';
 import { ProjetosDuvidaComponent } from './admin-projetos/projetos-duvida/projetos-duvida.component';
+import { CalendarioComponent } from './calendario/calendario.component';
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import { ProjetosDuvidaComponent } from './admin-projetos/projetos-duvida/projet
     CriarProjetoComponent,
     CriacaoQuemSomosComponent,
     ProjetosDuvidaComponent,
+    CalendarioComponent,
   ],
   imports: [
     BrowserModule,

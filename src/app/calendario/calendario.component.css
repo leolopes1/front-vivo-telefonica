@@ -1,0 +1,29 @@
+.containerCentralizador {
+    display: flex;
+
+    width: 80%;
+    margin-left: 16px;
+    margin-top: 16px;
+
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo {
+    margin-left: 20px;
+}
+
+.containerText {
+    color: #660099;
+    font-size: 25px;
+    
+    
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}

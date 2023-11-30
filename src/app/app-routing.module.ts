@@ -14,6 +14,7 @@ import { ProjetosDetalheComponent } from './admin-projetos/projetos-detalhe/proj
 import { CriarProjetoComponent } from './admin-projetos/criar-projeto/criar-projeto.component';
 import { CriacaoQuemSomosComponent } from './quem-somos-adm/criacao-quem-somos/criacao-quem-somos.component';
 import { ProjetosDuvidaComponent } from './admin-projetos/projetos-duvida/projetos-duvida.component';
+import { CalendarioComponent } from './calendario/calendario.component';
 
 
 
@@ -29,7 +30,8 @@ const routes: Routes = [
   { path: 'projetos/:id', component: ProjetosDetalheComponent, },
   { path: 'criar-projeto', component: CriarProjetoComponent, },
   { path: 'criar-biografia', component: CriacaoQuemSomosComponent, },
-  { path: 'projeto-duvida', component: ProjetosDuvidaComponent, }
+  { path: 'projeto-duvida', component: ProjetosDuvidaComponent, },
+  { path: 'calendario', component: CalendarioComponent, }
   
 
   
