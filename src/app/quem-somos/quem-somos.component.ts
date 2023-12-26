@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { QuemSomosService } from '../services/quem-somos.service'
 
 
 @Component({
@@ -7,7 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./quem-somos.component.css'],
   
 })
-export class QuemSomosComponent {
+export class QuemSomosComponent implements OnInit {
+  membroSelecionado: any;
+  currentIndex: number = 0;
+  constructor(private quemSomosService: QuemSomosService) { }
+
+  equipe: any[] = [];
+
+
   firstText = `A Vivo acredita que a revolução tecnológica deve ser parte da vida de todas e todos 
   e não um privilégio de poucos. Queremos que as oportunidades que o mundo digital oferece sejam 
   universais contribuindo como uma força positiva para transformação individual, das empresas e da sociedade.`;
@@ -17,9 +25,32 @@ export class QuemSomosComponent {
   originally bred for hunting.`;
 
   thidText = `Em um mundo de mudanças constantes e uma sociedade cada vez mais digital, buscamos 
-  esratégias para gerar impacto socioambiental positivo e cirar conexões mais próximas e sustentáveis`;
+  estratégias para gerar impacto socioambiental positivo e cirar conexões mais próximas e sustentáveis`;
 
-  colaborador =`Leonardo Lopes`
-  cargo =`Accenture Developer`
+  buscarColaboradores() {
+    this.quemSomosService.buscarColaboradores().subscribe(
+      (resultados) => {
+        this.equipe = resultados || [];
+        console.log(resultados);
+        
+      },
+      (erro) => {
+        console.error('Erro ao buscar colaboradores', erro);
+      }
+    )
+    
+  }
+
+  ngOnInit() {
+    this.atualizarMembroSelecionado();
+    this.buscarColaboradores();
+    setInterval(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.equipe.length;
+      this.atualizarMembroSelecionado();
+    }, 6000);
+  }
+  private atualizarMembroSelecionado() {
+    this.membroSelecionado = this.equipe[this.currentIndex] || {};
+  }
   
 }

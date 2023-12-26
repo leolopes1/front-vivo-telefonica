@@ -56,7 +56,7 @@
     flex-direction: column;
 }
 .cardPhone{
-    background-color: #ff9900;
+    background-color: #660099;
     width: 220px;
     height: 350px;
     display: flex;
@@ -67,13 +67,38 @@
     border-radius: 12px;
     padding: 20px;
     margin: 20px;
+    position: relative;
+
 }
+.cardPhone::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Ajuste o último valor (0.5) para controlar a opacidade do escurecimento */
+    pointer-events: none; /* Para permitir a interação com o conteúdo subjacente */
+    border-radius: 12px;
+}
+
 .citacaoUsuario{
-    font-weight: 600;
+    font-weight: 500;
     padding: 10px;
+    font-size: 14px;
+    color: white;
 }
-.textPurple{
-    color: #660099;
+.textWhite{
+    color: white;
     font-weight:500 ;
 }
+.carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%; /* faz com que cada item ocupe 100% da largura */
+    transition: transform 0.5s ease-in-out;
+  }
 

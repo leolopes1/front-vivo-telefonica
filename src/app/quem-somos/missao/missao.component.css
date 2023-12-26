@@ -1,0 +1,67 @@
+.example-card {
+    max-width: 800px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+
+.content{
+    font-style: none;
+    size: 40px;
+    font-weight: 500;
+}
+
+.title{
+    /* text-decoration: underline; */
+    size: 100px;
+    font-weight: 600;
+    color: #660099;
+}
+.containerPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containerText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+.containerDescricao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.titleText{
+    color: #660099;
+    width: 20%;
+}
+.descricao{
+    
+    margin-left: 18px;
+    width: 80%;
+}
+
+.colunaCard{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.citacaoUsuario{
+    font-weight: 500;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+}
+.textWhite{
+    color: white;
+    font-weight:500 ;
+}
+

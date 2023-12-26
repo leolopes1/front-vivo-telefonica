@@ -15,15 +15,21 @@ import { CriarProjetoComponent } from './admin-projetos/criar-projeto/criar-proj
 import { CriacaoQuemSomosComponent } from './quem-somos-adm/criacao-quem-somos/criacao-quem-somos.component';
 import { ProjetosDuvidaComponent } from './admin-projetos/projetos-duvida/projetos-duvida.component';
 import { CalendarioComponent } from './calendario/calendario.component';
+import { MissaoComponent } from './quem-somos/missao/missao.component';
+import { EquipeComponent } from './quem-somos/equipe/equipe.component';
+import { ResponsabilidadesComponent } from './quem-somos/responsabilidades/responsabilidades.component';
 
 
 
 const routes: Routes = [
   { path: '', component: QuemSomosComponent, canActivate: [AuthGuard] }, 
-  { path: 'quem-somos', component: QuemSomosComponent, canActivate: [AuthGuard] }, 
+  { path: 'quem-somos', component: QuemSomosComponent, }, 
+  { path: 'quem-somos/missao', component: MissaoComponent, }, 
+  { path: 'quem-somos/equipe', component: EquipeComponent, }, 
+  { path: 'quem-somos/responsabilidades', component: ResponsabilidadesComponent, }, 
   { path: 'homepage', component: FiquePorDentroComponent },
   { path: 'user-admin', component: UserAdminComponent,canActivate: [AuthGuard]},
-  { path: 'update-quem-somos', component: QuemSomosAdminComponent,canActivate: [AuthGuard] },
+  { path: 'update-quem-somos', component: QuemSomosAdminComponent},
   { path: 'login', component: LoginComponent},
   { path: 'gerenciador-usuarios', component:GerenciadorUsuarioComponent, canActivate: [AuthGuard]},
   { path: 'projetos', component:ProjetosComponent, },

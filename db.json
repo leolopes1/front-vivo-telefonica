@@ -44,6 +44,94 @@
       "nome": "sustentabilidade",
       "status": "em análise"
     }
+  ],
+  "colaboradores":[
+    {
+      "id":1,
+      "nome":"Vivian",
+      "frase":"Não desista dos seus sonhos",
+      "funcao":"",
+      "url":"/assets/fotos/Vivian.jpg"
+    },
+    {
+      "id":2,
+      "nome":"Cleia",
+      "frase":"Ando devagar porque já tive pressa",
+      "funcao":"",
+      "url":"/assets/fotos/Cleia.jpg" 
+    },
+    {
+      "id":3,
+      "nome":"Adriana",
+      "frase":"Tenha fé, tenha esperança e acredite! Você é mais forte do que pensa ser",
+      "funcao":"",
+      "url":"/assets/fotos/Adriana.jpg"
+    },
+    {
+      "id":4,
+      "nome":"Erika",
+      "frase":"Bora comemorar",
+      "funcao":"",
+      "url":"/assets/fotos/Erika.jpg"
+    },
+    {
+      "id":5,
+      "nome":"Fabiana",
+      "frase":"Viva a Vida Plena",
+      "funcao":"",
+      "url":"/assets/fotos/Fabiana.jpg"
+    },
+    {
+      "id":6,
+      "nome":"Ian",
+      "frase":"Custe o que custar, faça o que for preciso",
+      "funcao":"",
+      "url":"/assets/fotos/Ian.jpg"
+    },
+    {
+      "id":7,
+      "nome":"Keren",
+      "frase":"Nunca perca quem você é por ninguém e nunca esqueça o seu valor",
+      "funcao":"",
+      "url":"/assets/fotos/Keren.jpg"
+    },
+    {
+      "id":8,
+      "nome":"Lucas",
+      "frase":"Você não é derrotado quando perde. Você é derrotado quando desiste",
+      "funcao":"",
+      "url":"/assets/fotos/Lucas.jpg"
+    },
+    {
+      "id":9,
+      "nome":"Luiz Gustavo",
+      "frase":"Histórias, nossas histórias, dias de luta, dias de glória",
+      "funcao":"",
+      "url":"/assets/fotos/LuizGustavo.jpg"
+    },
+    {
+      "id":10,
+      "nome":"Raisa",
+      "frase":"Não coloque todas as suas esperanças em mudanças da noite para o dia, pois as maiores informações acontecem gradualmente dia a dia",
+      "funcao":"",
+      "url":"/assets/fotos/Raisa.jpg"
+    },
+    {
+      "id":11,
+      "nome":"Shayenne",
+      "frase":"A humildade antecede a honra",
+      "funcao":"",
+      "url":"/assets/fotos/Shayenne.jpg"
+    },
+    {
+      "id":12,
+      "nome":"Valeria",
+      "frase":"Quem elegeu a busca, não pode recusar a travessia",
+      "funcao":"",
+      "url":"/assets/fotos/Valeria.jpg"
+    }
+    
+  
   ]
   
 }

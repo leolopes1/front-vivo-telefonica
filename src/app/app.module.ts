@@ -46,6 +46,9 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CriacaoQuemSomosComponent } from './quem-somos-adm/criacao-quem-somos/criacao-quem-somos.component';
 import { ProjetosDuvidaComponent } from './admin-projetos/projetos-duvida/projetos-duvida.component';
 import { CalendarioComponent } from './calendario/calendario.component';
+import { MissaoComponent } from './quem-somos/missao/missao.component';
+import { EquipeComponent } from './quem-somos/equipe/equipe.component';
+import { ResponsabilidadesComponent } from './quem-somos/responsabilidades/responsabilidades.component';
 
 
 @NgModule({
@@ -66,6 +69,9 @@ import { CalendarioComponent } from './calendario/calendario.component';
     CriacaoQuemSomosComponent,
     ProjetosDuvidaComponent,
     CalendarioComponent,
+    MissaoComponent,
+    EquipeComponent,
+    ResponsabilidadesComponent,
   ],
   imports: [
     BrowserModule,

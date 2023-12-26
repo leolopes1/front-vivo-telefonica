@@ -37,7 +37,7 @@
   <div class="colunaCard">
 
 
-    <div class="cardPhone">
+    <!-- <div class="cardPhone">
       <div>
 
         <img src="/assets/Leo.jpg" alt="image" class="imgColaborador">
@@ -53,7 +53,27 @@
         {{cargo}}
       </div>
 
+    </div> -->
+
+    <!-- app-carrossel.component.html -->
+
+<div class="carousel">
+  <div class="cardPhone">
+    <div>
+      <img [src]="membroSelecionado.url" alt="image" class="imgColaborador">
     </div>
+    <div class="citacaoUsuario">
+      {{membroSelecionado.frase}}
+    </div>
+    <div class="textWhite">
+      {{membroSelecionado.nome}}
+    </div>
+    <div>
+      {{membroSelecionado.funcao}}
+    </div>
+  </div>
+</div>
+    
 
 
   </div>
