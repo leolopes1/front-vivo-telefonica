@@ -9,9 +9,14 @@ import { Observable } from 'rxjs';
 export class QuemSomosService {
   constructor(private http: HttpClient) {}
 
-  buscarColaboradores(): Observable<any[]> {
+  buscarColaboradoresReceita(): Observable<any[]> {
     
-    const url = `http://localhost:3000/colaboradores`;
+    const url = `http://localhost:3000/colaboradores-receitas`;
+    return this.http.get<any[]>(url);
+  }
+  buscarColaboradoresProjeto(): Observable<any[]> {
+    
+    const url = `http://localhost:3000/colaboradores-projetos`;
     return this.http.get<any[]>(url);
   }
 

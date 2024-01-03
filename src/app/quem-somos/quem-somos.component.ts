@@ -28,7 +28,7 @@ export class QuemSomosComponent implements OnInit {
   estratégias para gerar impacto socioambiental positivo e cirar conexões mais próximas e sustentáveis`;
 
   buscarColaboradores() {
-    this.quemSomosService.buscarColaboradores().subscribe(
+    this.quemSomosService.buscarColaboradoresReceita().subscribe(
       (resultados) => {
         this.equipe = resultados || [];
         console.log(resultados);
