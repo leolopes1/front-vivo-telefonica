@@ -1,0 +1,21 @@
+.boxCentralizador{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerText{
+    color: #660099;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 30px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.containerImg{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}

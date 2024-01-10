@@ -17,51 +17,45 @@
    <div class="box-operacional">
       <div class="boxColuna">
          <p class="titlePagina">Receitas</p>
-         <mat-card class="operacional-card" >
-            <p></p>
-            <mat-card-actions>
-               <!-- FAB button para voltar -->
-               
-            </mat-card-actions>
-            <mat-card-content class="content">
-               <div class="colunaContainer">
-                  <img [src]="membroSelecionadoReceitas.url" alt="image" width="125" height="135">
-                  <div class="descricaoCard">
-                     <p class="cardTitle">{{ membroSelecionadoReceitas.nome }}</p>
-                     <p>{{ membroSelecionadoReceitas.funcao }}</p>
-                     <p>{{ membroSelecionadoReceitas.frase }}</p>
-                  </div>
-               </div>
-            </mat-card-content>
-            <mat-card-actions>
-               <!-- FAB button para avançar -->
-               
-            </mat-card-actions>
-         </mat-card>
+         <div class="cardPhone">
+            <div>
+
+               <img [src]="membroSelecionadoReceitas.url" alt="image" class="imgColaborador">
+            </div>
+
+            <div class="citacaoUsuario">
+               <p>{{ membroSelecionadoReceitas.frase }}</p>
+            </div>
+            <div class="textPurple">
+               {{membroSelecionadoReceitas.nome}}
+            </div>
+            <div>
+               {{membroSelecionadoReceitas.funcao}}
+            </div>
+
+         </div>
+        
       </div>
       <div class="boxColuna">
          <p class="titlePagina">Projetos</p>
-         <mat-card class="operacional-card" >
-            <p></p>
-            <mat-card-actions>
-               <!-- FAB button para voltar -->
-               
-            </mat-card-actions>
-            <mat-card-content class="content">
-               <div class="colunaContainer">
-                  <img [src]="membroSelecionadoProjetos.url" alt="image" width="125" height="135">
-                  <div class="descricaoCard">
-                     <p class="cardTitle">{{ membroSelecionadoProjetos.nome }}</p>
-                     <p>{{ membroSelecionadoProjetos.funcao }}</p>
-                     <p>{{ membroSelecionadoProjetos.frase }}</p>
-                  </div>
-               </div>
-            </mat-card-content>
-            <mat-card-actions>
-               <!-- FAB button para avançar -->
-               
-            </mat-card-actions>
-         </mat-card>
+         <div class="cardPhone">
+            <div>
+
+               <img [src]="membroSelecionadoProjetos.url" alt="image" class="imgColaborador">
+            </div>
+
+            <div class="citacaoUsuario">
+               <p>{{ membroSelecionadoProjetos.frase }}</p>
+            </div>
+            <div class="textPurple">
+               {{membroSelecionadoProjetos.nome}}
+            </div>
+            <div>
+               {{membroSelecionadoProjetos.funcao}}
+            </div>
+
+         </div>
+
       </div>
    </div>
 </div>

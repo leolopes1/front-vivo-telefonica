@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./responsabilidades.component.css']
 })
 export class ResponsabilidadesComponent {
+  showComponentProcesso = true;
+  showComponentReceitas = false;
+  showComponentProjetos = false;
 
 }
+

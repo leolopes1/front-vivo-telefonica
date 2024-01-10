@@ -6,12 +6,14 @@
 
   margin: 0;
   min-height: 100%;
+  margin-left: 0px;
  
 }  
 
 .app-sidenav {
   width: 230px;
   height: 100%;
+  
   
 }
 .app-sidenav-content {
@@ -22,9 +24,17 @@
 
   
 }
+.sidenavTitle{
+  font-size: medium;
+  padding: 0px;
+  margin: 0;
+  
+
+}
 
 .menu {
   display: table;
+  font-size: large;
 }
 
 .menu ul {
@@ -33,6 +43,7 @@
   margin: 0;
   display: flexbox;
   justify-content: center;
+  
 }
 
 .menu li {
@@ -66,4 +77,14 @@
 .icon{
   width: 44px;
   height: 36px;
+}
+.mat-content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  overflow: hidden;
+  
+}
+.zeraMargem{
+  margin-left: 0px;
 }

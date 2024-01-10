@@ -41,23 +41,29 @@
       <mat-list-item routerLink="#" routerLink="/homepage">
         <span>Fique por Dentro</span>
       </mat-list-item>
-
+      
+      <mat-nav-list>
+        <a mat-list-item routerLink="/calendario">Calendários</a>
+      </mat-nav-list>
 
       <mat-expansion-panel [class.mat-elevation-z0]="true">
         <mat-expansion-panel-header>
-          Projetos
+          <p class="sidenavTitle">Projetos</p>
         </mat-expansion-panel-header>
         <mat-nav-list>
-          <a mat-list-item routerLink="/projetos">Projetos</a>
+          <a  mat-list-item routerLink="/projetos">Projetos</a>
         </mat-nav-list>
         <mat-nav-list>
           <a mat-list-item routerLink="/criar-projeto">Crie seu projeto</a>
         </mat-nav-list>
-
+        
       </mat-expansion-panel>
       <mat-expansion-panel [class.mat-elevation-z0]="true">
         <mat-expansion-panel-header>
-          Quem Somos
+          <div class="zeraMargem">
+            <p class="sidenavTitle">Quem Somos</p>
+
+          </div>
         </mat-expansion-panel-header>
         <mat-nav-list>
           <a mat-list-item routerLink="/quem-somos/equipe">Equipe</a>
@@ -70,20 +76,8 @@
         </mat-nav-list>
 
       </mat-expansion-panel>
-      <!-- <mat-expansion-panel [class.mat-elevation-z0]="true">
-        <mat-expansion-panel-header>
-          Calendários
-        </mat-expansion-panel-header>
-        <mat-nav-list>
-          <a mat-list-item routerLink="#">Releases</a>
-        </mat-nav-list>
-      </mat-expansion-panel> -->
-      <mat-nav-list>
-        <a mat-list-item routerLink="/calendario">Calendários</a>
-      </mat-nav-list>
-      <mat-nav-list>
-        <a mat-list-item routerLink="/quem-somos">Quem somos</a>
-      </mat-nav-list>
+      
+      
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

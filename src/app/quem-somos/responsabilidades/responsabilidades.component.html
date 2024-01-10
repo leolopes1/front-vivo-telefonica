@@ -1,1 +1,20 @@
-<p>responsabilidades works!</p>
+<div class="containerButton">
+    <mat-button-toggle class="custom-toggle" [class.mat-button-toggle-checked]="showComponentProcesso" mat-button
+        (click)="showComponentProcesso = true;showComponentReceitas = false;showComponentProjetos = false;">
+        Nosso processo
+    </mat-button-toggle>
+    <mat-button-toggle class="custom-toggle" [class.mat-button-toggle-checked]="showComponentProjetos" mat-button
+        (click)="showComponentProjetos = true;showComponentReceitas = false; showComponentProcesso = false">
+        Projetos
+    </mat-button-toggle>
+    <mat-button-toggle class="custom-toggle" [class.mat-button-toggle-checked]="showComponentReceitas" mat-button
+        (click)="showComponentReceitas = true;showComponentProcesso = false;showComponentProjetos = false;">
+        Receitas
+    </mat-button-toggle>
+</div>
+
+<div class="component-container">
+    <app-analise-receitas *ngIf="showComponentReceitas"></app-analise-receitas>
+    <app-nosso-processo *ngIf="showComponentProcesso"></app-nosso-processo>
+    <app-projetos-responsabilidades *ngIf="showComponentProjetos"></app-projetos-responsabilidades>
+</div>

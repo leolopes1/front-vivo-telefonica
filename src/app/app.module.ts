@@ -49,6 +49,9 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { MissaoComponent } from './quem-somos/missao/missao.component';
 import { EquipeComponent } from './quem-somos/equipe/equipe.component';
 import { ResponsabilidadesComponent } from './quem-somos/responsabilidades/responsabilidades.component';
+import { NossoProcessoComponent } from './quem-somos/responsabilidades/nosso-processo/nosso-processo.component';
+import { AnaliseReceitasComponent } from './quem-somos/responsabilidades/analise-receitas/analise-receitas.component';
+import { ProjetosResponsabilidadesComponent } from './quem-somos/responsabilidades/projetos-responsabilidades/projetos-responsabilidades.component';
 
 
 @NgModule({
@@ -72,6 +75,9 @@ import { ResponsabilidadesComponent } from './quem-somos/responsabilidades/respo
     MissaoComponent,
     EquipeComponent,
     ResponsabilidadesComponent,
+    NossoProcessoComponent,
+    AnaliseReceitasComponent,
+    ProjetosResponsabilidadesComponent,
   ],
   imports: [
     BrowserModule,
