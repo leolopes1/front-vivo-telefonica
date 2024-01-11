@@ -3,41 +3,54 @@
     <p class="textoPrincipal">Comunicados</p>
   </div>
   <div class="comunicadosContainer">
-    <div class="cardNoticia" *ngFor="let card of cards">
-      <div class="cardBackground" [style.background-image]="'url(' + card.image + ')'">
-        <div class="cardContent">
-          <h3>{{ card.title }}</h3>
-          <p>{{ card.description }}</p>
+    <a *ngFor="let card of cards" href="{{ card.url }}" target="_blank">
+      <div class="cardNoticia">
+        <div class="cardBackground" [style.background-image]="'url(' + card.image + ')'">
+          <div class="cardContent">
+            <h3>{{ card.title }}</h3>
+
+          </div>
         </div>
       </div>
-    </div>
+    </a>
 
   </div>
   <div>
     <p class="textoPrincipal">Notícias</p>
-    <a>Conheça nossos projetos por um futuro mais consciente e conectado </a>
+
   </div>
   <div class="noticiasContainer">
-    <!-- <div class="cardNoticia" *ngFor="let noticia of noticias" >
-      <div class="cardBackground">
-        <img [src]="noticia.image" class="imageNoticia">
-      </div>
-      <div class="overlay">
-        <h3>{{ noticia.title }}</h3>
-        <p>{{ noticia.description }}</p>
-      </div>
-    </div> -->
-    <div class="cardNoticia" *ngFor="let noticia of noticias">
-      <div class="cardBackground" [style.background-image]="'url(' + noticia.image + ')'">
-        <div class="cardContent">
-          <h3>{{ noticia.title }}</h3>
-          <p>{{ noticia.description }}</p>
+
+    <a *ngFor="let noticia of noticias" href="{{ noticia.url }}" target="_blank">
+      <div class="cardNoticia">
+        <div class="cardBackground" [style.background-image]="'url(' + noticia.image + ')'">
+          <div class="cardContent">
+            <h3>{{ noticia.title }}</h3>
+
+
+
+          </div>
         </div>
       </div>
+    </a>
+
+
+
+  </div>
+  <div>
+    <p class="textoPrincipal">Links Úteis</p>
+    <div class="centralizadorLinks">
+      <div class="cardLinks" *ngFor="let link of links">
+        <a href="{{ link.url }}">
+          <div class="conteinertxt">
+
+            <p class="linkTitle">{{link.title}}</p>
+          </div>
+          <img src="{{link.img}}" alt="image" width="100" height="80" class="imgVivinho">
+        </a>
+      </div>
+
     </div>
-
-
-
   </div>
 
 </div>

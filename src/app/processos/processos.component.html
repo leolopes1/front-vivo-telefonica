@@ -1,0 +1,36 @@
+<div class="containerCentralizador">
+
+    <div class="containerIcon">
+        <img src="/assets/foguete.svg" width="45" height="45" alt="">
+        <div class="containerText">
+            <p>
+                Processos
+            </p>
+
+        </div>
+
+    </div>
+    <div>
+
+        <div class="containerBusca">
+            <p>Buscar Processo</p>
+            <form class="example-form" >
+                <mat-form-field class="searchBar" onsubmit="filtrarProjetos()">
+                    <mat-label >Buscar por Ito</mat-label>
+                    <input matInput [(ngModel)]='nome' (input)="filtrarProjetos()">
+                </mat-form-field>
+                <mat-icon (click)="filtrarProjetos()"> search </mat-icon>
+            </form>
+
+        </div>
+    </div>
+    <div class="containerCard"  *ngFor="let projeto of projetos" >
+        
+        <mat-card class="card" >
+            <mat-card-content> {{ projeto.nome }}</mat-card-content>
+            
+        </mat-card>
+        
+    </div>
+    
+</div>

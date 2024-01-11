@@ -72,7 +72,7 @@ export class EquipeComponent implements OnInit {
         this.currentIndexProjetos = (this.currentIndexProjetos + 1) % this.usuarioProjetos.length;
         this.atualizarMembroSelecionadoProjetos();
       }
-    }, 6000);
+    }, 9000);
   }
 
   private atualizarMembroSelecionadoReceitas() {

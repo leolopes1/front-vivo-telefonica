@@ -31,6 +31,12 @@
   
 
 }
+.mdc-list-item {
+  padding-left: 23px;
+  padding-right: 16px;
+  font-weight: 600;
+  
+}
 
 .menu {
   display: table;
@@ -87,4 +93,7 @@
 }
 .zeraMargem{
   margin-left: 0px;
+}
+.sidenavNome{
+  font-weight: 500;
 }

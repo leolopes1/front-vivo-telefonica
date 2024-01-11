@@ -5,7 +5,7 @@
          <p></p>
          <mat-card-content class="content">
             <div class="colunaContainer">
-               <img [src]="membro.imagem" alt="image" width="125" height="135">
+               <img [src]="membro.imagem" alt="image" width="125" height="105">
                <div class="descricaoCard">
                   <p class="cardTitle">{{ membro.nome }}</p>
                   <p>{{ membro.cargo }}</p>
@@ -23,16 +23,21 @@
                <img [src]="membroSelecionadoReceitas.url" alt="image" class="imgColaborador">
             </div>
 
+            <div class="textWhite">
+               {{membroSelecionadoReceitas.nome}}
+            </div>
+            <div class="textDescricao">
+               {{membroSelecionadoReceitas.funcao}}
+            </div>
+            
+            <div class="textDescricao">
+               <ul>
+                  <li *ngFor="let atribuicao of membroSelecionadoReceitas.atribuicao">{{ atribuicao }}</li>
+               </ul>
+            </div>
             <div class="citacaoUsuario">
                <p>{{ membroSelecionadoReceitas.frase }}</p>
             </div>
-            <div class="textPurple">
-               {{membroSelecionadoReceitas.nome}}
-            </div>
-            <div>
-               {{membroSelecionadoReceitas.funcao}}
-            </div>
-
          </div>
         
       </div>
@@ -44,16 +49,22 @@
                <img [src]="membroSelecionadoProjetos.url" alt="image" class="imgColaborador">
             </div>
 
+            <div class="textWhite">
+               {{membroSelecionadoProjetos.nome}}
+            </div>
+            <div class="textDescricao">
+               {{membroSelecionadoProjetos.funcao}}
+            </div>
+            <div class="textDescricao">
+               <ul>
+                  <li *ngFor="let atribuicao of membroSelecionadoProjetos.atribuicao">{{ atribuicao }}</li>
+               </ul>
+            </div>
             <div class="citacaoUsuario">
                <p>{{ membroSelecionadoProjetos.frase }}</p>
             </div>
-            <div class="textPurple">
-               {{membroSelecionadoProjetos.nome}}
-            </div>
-            <div>
-               {{membroSelecionadoProjetos.funcao}}
-            </div>
 
+            
          </div>
 
       </div>

@@ -51,21 +51,24 @@
       "nome":"Vivian",
       "frase":"Não desista dos seus sonhos",
       "funcao":"Consultor Planej. e Controle",
-      "url":"/assets/fotos/Vivian.jpg"
+      "url":"/assets/fotos/Vivian.jpg",
+      "atribuicao":["Forecast Fixa","Contabilização da Fixa: Next, Kenan"]
     },
     {
       "id":2,
       "nome":"Cleia",
       "frase":"Ando devagar porque já tive pressa",
       "funcao":"Analista Contr. Oper. Fin. SR",
-      "url":"/assets/fotos/Cleia.jpg" 
+      "url":"/assets/fotos/Cleia.jpg",
+      "atribuicao":["Contabilização da Digital: Atlys","Billing de Dados","Esteira Digital","Contabilização Pré-pago: Ngin"] 
     },
     {
       "id":3,
       "nome":"Adriana",
       "frase":"Tenha fé, tenha esperança e acredite! Você é mais forte do que pensa ser",
       "funcao":"Consultor Contr Oper. Fin.",
-      "url":"/assets/fotos/Adriana.jpg"
+      "url":"/assets/fotos/Adriana.jpg",
+      "atribuicao":["Coordenação de atividades e apoio a auditoria"]
     },
     
     
@@ -74,28 +77,32 @@
       "nome":"Ian Victor",
       "frase":"Custe o que custar, faça o que for preciso",
       "funcao":"Estagiário",
-      "url":"/assets/fotos/Ian.jpg"
+      "url":"/assets/fotos/Ian.jpg",
+      "atribuicao":["Mapeamento de Processos"]
     },
     {
       "id":7,
       "nome":"Keren",
       "frase":"Nunca perca quem você é por ninguém e nunca esqueça o seu valor",
-      "funcao":"",
-      "url":"/assets/fotos/Keren.jpg"
+      "funcao":"Analista Contr. Oper. Fin. SR",
+      "url":"/assets/fotos/Keren.jpg",
+      "atribuicao":["Forecast móvel","Contabilização da Móvel: Next e Atlys","Cronograma de fechamento"]
     },
     {
       "id":8,
       "nome":"Lucas",
       "frase":"Você não é derrotado quando perde. Você é derrotado quando desiste",
       "funcao":"Estagiário",
-      "url":"/assets/fotos/Lucas.jpg"
+      "url":"/assets/fotos/Lucas.jpg",
+      "atribuicao":["Automação e Digitalização de Processos"]
     },
     {
       "id":9,
       "nome":"Luiz Gustavo",
       "frase":"Histórias, nossas histórias, dias de luta, dias de glória",
       "funcao":"Analista Contr. Oper. Fin. PL",
-      "url":"/assets/fotos/LuizGustavo.jpg"
+      "url":"/assets/fotos/LuizGustavo.jpg",
+      "atribuicao":["Contabilização da Fixa: Cso,Fatcob"]
     }
     
   
@@ -105,36 +112,43 @@
       "id":1,
       "nome":"Erika",
       "frase":"Bora comemorar",
-      "funcao":"",
-      "url":"/assets/fotos/Erika.jpg"
+      "funcao":"Consultor Contabilidade",
+      "url":"/assets/fotos/Erika.jpg",
+      "atribuicao":["Projetos Estruturantes","Comitê de Ofertas,Fluxo de NP&S","Demandas PPs"]
     },
     {
       "id":2,
       "nome":"Valeria",
       "frase":"Quem elegeu a busca, não pode recusar a travessia",
-      "funcao":"",
-      "url":"/assets/fotos/Valeria.jpg"
+      "funcao":"Analista Contábil Sr",
+      "url":"/assets/fotos/Valeria.jpg",
+      "atribuicao":["Fluxo de P&S","Comitê de Ofertas","Fluxo de NP&S"]
+      
     },
     {
       "id":3,
       "nome":"Shayenne",
       "frase":"A humildade antecede a honra",
-      "funcao":"",
-      "url":"/assets/fotos/Shayenne.jpg"
+      "funcao":"Consultor Contabilidade",
+      "url":"/assets/fotos/Shayenne.jpg",
+      "atribuicao":["Projetos Estruturantes","Demandas Internas", "Parametrização Next"]
     },
     {
       "id":4,
       "nome":"Raisa",
       "frase":"Não coloque todas as suas esperanças em mudanças da noite para o dia.",
-      "funcao":"",
-      "url":"/assets/fotos/Raisa.jpg"
+      "funcao":"Estagiária",
+      "url":"/assets/fotos/Raisa.jpg",
+      "atribuicao":["Fluxo de P&S","Comunicado de Release","Homologações"]
     },
     {
       "id":5,
       "nome":"Fabiana",
       "frase":"Viva a Vida Plena",
-      "funcao":"Ger. SR Controle Operações Fin.",
-      "url":"/assets/fotos/Fabiana.jpg"
+      "funcao":"Consultor Contabilidade",
+      "url":"/assets/fotos/Fabiana.jpg",
+      "atribuicao":["Projetos Estruturantes","NFCOM","Fênix"]
+    
     }
     
   ],

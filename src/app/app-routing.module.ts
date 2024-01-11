@@ -18,6 +18,8 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { MissaoComponent } from './quem-somos/missao/missao.component';
 import { EquipeComponent } from './quem-somos/equipe/equipe.component';
 import { ResponsabilidadesComponent } from './quem-somos/responsabilidades/responsabilidades.component';
+import { ProcessosComponent } from './processos/processos.component';
+import { BibliotecaComponent } from './processos/biblioteca/biblioteca.component';
 
 
 
@@ -37,7 +39,9 @@ const routes: Routes = [
   { path: 'criar-projeto', component: CriarProjetoComponent, },
   { path: 'criar-biografia', component: CriacaoQuemSomosComponent, },
   { path: 'projeto-duvida', component: ProjetosDuvidaComponent, },
-  { path: 'calendario', component: CalendarioComponent, }
+  { path: 'calendario', component: CalendarioComponent, },
+  { path: 'processos', component: ProcessosComponent, },
+  { path: 'biblioteca', component: BibliotecaComponent, }
   
 
   

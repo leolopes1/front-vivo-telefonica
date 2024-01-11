@@ -1,0 +1,93 @@
+.containerBusca {
+    margin-bottom: 30px;
+    margin-top: 30px;
+ }
+ 
+ .containerText {
+     color: #660099;
+     font-size: 25px;
+     margin-top: 25px;
+     margin-left: 20px;
+     font-weight: 500;
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+ }
+ 
+ .containerCentralizador {
+     display: flex;
+     margin-left: 60px;
+     flex-direction: column;
+     width: 80%;
+ 
+     
+ 
+ }
+ 
+ .containerIcon {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ .card {
+     display: flex;
+     border-color: #660099;
+     border: #660099;
+     border-radius: 5px;
+     width: 80%;
+     height: 69px;
+     border: 1px solid #609;
+     justify-content: flex-start;
+     margin-bottom: 13px;
+     flex-direction: row;
+ }
+ 
+ .card:hover {
+     background-color: #660099;
+     color: #fff;
+     
+ 
+ }
+ .searchBar {
+     width: 60%; /* Ajuste o valor conforme necessário */
+   }
+ .containerCard{
+     display: flex;
+     flex-direction: row;
+ }
+ .containerStatus{
+     display: flex;
+     align-items: center;
+     width: 130px;
+     border-color: #660099;
+     border: #660099;
+     border-radius: 5px;
+     height: 69px;
+     border: 1px solid #609;
+     padding-left: 10px;
+     font-weight: 500;
+     
+ }
+ .projeto-table {
+     width: 100%;
+     border-collapse: collapse;
+     border-color: #660099
+   }
+   
+   .projeto-table th, .projeto-table td {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 8px;
+   }
+   .projeto-table thead {
+     background-color: #660099; /* Cor de fundo fixa para o cabeçalho */
+     color: #ffffff; /* Cor do texto no cabeçalho */
+   }
+     
+ 
+   
+   .projeto-table tr:hover {
+     background-color: #660099; 
+     color: #ffffff; 
+   }
+ 

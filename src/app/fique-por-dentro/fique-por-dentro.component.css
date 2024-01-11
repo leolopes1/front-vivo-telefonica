@@ -5,6 +5,7 @@
     height: auto;
     align-content: center;
     margin-left: 50px;
+    text-decoration: none;
 }
 
 .comunicadosContainer {
@@ -77,6 +78,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   padding: 16px;
   height: 100%;
+  max-width: 300px;
 
 }.cardContent h3 {
     color: white; /* Cor do título branca */
@@ -89,6 +91,36 @@
     font-weight: 300;
     font-size: 16px;
   }
+  
+  .cardLinks{
+    
+    max-width: 100px;
+    max-height: 150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-color: #660099;
+    border: #660099;
+    border-radius: 5px;
+    border: 1px solid #609;
+    flex-direction: column;
+    font-size: large;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .centralizadorLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    text-decoration: none;
+  }
+  .conteinertxt{
+    min-height: 60px;
+  }
+  .containerPrincipal a {
+    text-decoration: none;
+}
 
   
 

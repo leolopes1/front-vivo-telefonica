@@ -52,6 +52,8 @@ import { ResponsabilidadesComponent } from './quem-somos/responsabilidades/respo
 import { NossoProcessoComponent } from './quem-somos/responsabilidades/nosso-processo/nosso-processo.component';
 import { AnaliseReceitasComponent } from './quem-somos/responsabilidades/analise-receitas/analise-receitas.component';
 import { ProjetosResponsabilidadesComponent } from './quem-somos/responsabilidades/projetos-responsabilidades/projetos-responsabilidades.component';
+import { ProcessosComponent } from './processos/processos.component';
+import { BibliotecaComponent } from './processos/biblioteca/biblioteca.component';
 
 
 @NgModule({
@@ -78,6 +80,8 @@ import { ProjetosResponsabilidadesComponent } from './quem-somos/responsabilidad
     NossoProcessoComponent,
     AnaliseReceitasComponent,
     ProjetosResponsabilidadesComponent,
+    ProcessosComponent,
+    BibliotecaComponent,
   ],
   imports: [
     BrowserModule,
