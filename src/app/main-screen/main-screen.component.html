@@ -37,15 +37,61 @@
 
 <mat-sidenav-container class="app-container">
   <mat-sidenav #sidenav mode="side" [class.mat-elevation-z4]="true" class="app-sidenav">
+    <mat-expansion-panel [class.mat-elevation-z0]="true">
+      <mat-expansion-panel-header>
+        <div class="zeraMargem">
+          <p class="sidenavTitle">Quem Somos</p>
+
+        </div>
+      </mat-expansion-panel-header>
+      <mat-nav-list>
+        <mat-list-item>
+          <p class="sidenavTitle" mat-list-item routerLink="/quem-somos/equipe">Equipe</p>
+        </mat-list-item>
+
+        <mat-list-item>
+          <p class="sidenavTitle" mat-list-item routerLink="/quem-somos/missao">Missão</p>
+
+        </mat-list-item>
+        <mat-list-item>
+          <p class="sidenavTitle" mat-list-item routerLink="/quem-somos/responsabilidades">Responsabilidades</p>
+        </mat-list-item>
+      </mat-nav-list>
+
+    </mat-expansion-panel>
     <mat-nav-list>
-      <mat-list-item routerLink="#" routerLink="/homepage">
-        <a class="sidenavNome">Fique por Dentro</a>
+      <mat-list-item routerLink="/dashboards">
+        <p class="sidenavTitle">Dashboards</p>
       </mat-list-item>
-      
+      <mat-list-item routerLink="/homepage">
+        <a class="sidenavTitle">Fique por Dentro</a>
+      </mat-list-item>
+
+      <mat-expansion-panel [class.mat-elevation-z0]="true">
+        <mat-expansion-panel-header>
+          <p class="sidenavTitle">Biblioteca Virtual</p>
+        </mat-expansion-panel-header>
+        <mat-list-item>
+          <a class="sidenavTitle" 
+            href="https://telefonicacorp.sharepoint.com/:f:/r/sites/Colabora_Brasil/PortalContabilidade/Documentos%20Compartilhados/Plano%20de%20Contas%20Cont%C3%A1beis%20-%20Vers%C3%A3o%20Comentada?csf=1&web=1&e=kcwQqZ">Plano
+            de Contas</a>
+        </mat-list-item>
+        <mat-list-item>
+          <p class="sidenavTitle"  routerLink="/processos">ITO</p>
+        </mat-list-item>
+        <mat-list-item >
+          <p  class="sidenavTitle" routerLink="/biblioteca">Memorandos</p>
+        </mat-list-item>
+
+      </mat-expansion-panel>
+      <mat-list-item routerLink="/homepage">
+        <p class="sidenavTitle">Cadastro p/ conta fin.</p>
+      </mat-list-item>
+
       <mat-nav-list>
         <mat-list-item routerLink="/calendario">
-        
-          <a class="sidenavNome">Calendários</a>
+
+          <p class="sidenavTitle">Calendários</p>
         </mat-list-item>
       </mat-nav-list>
 
@@ -54,45 +100,20 @@
           <p class="sidenavTitle">Projetos</p>
         </mat-expansion-panel-header>
         <mat-nav-list>
-          <a  mat-list-item routerLink="/projetos">Projetos</a>
-        </mat-nav-list>
-        <mat-nav-list>
-          <a mat-list-item routerLink="/criar-projeto">Crie seu projeto</a>
-        </mat-nav-list>
-        
-      </mat-expansion-panel>
-      <mat-expansion-panel [class.mat-elevation-z0]="true">
-        <mat-expansion-panel-header>
-          <p class="sidenavTitle">Processos</p>
-        </mat-expansion-panel-header>
-        <mat-nav-list>
-          <a  mat-list-item routerLink="/processos">Processos</a>
-        </mat-nav-list>
-        <mat-nav-list>
-          <a mat-list-item routerLink="/biblioteca">Biblioteca</a>
-        </mat-nav-list>
-        
-      </mat-expansion-panel>
-      <mat-expansion-panel [class.mat-elevation-z0]="true">
-        <mat-expansion-panel-header>
-          <div class="zeraMargem">
-            <p class="sidenavTitle">Quem Somos</p>
 
-          </div>
-        </mat-expansion-panel-header>
-        <mat-nav-list>
-          <a mat-list-item routerLink="/quem-somos/equipe">Equipe</a>
-        </mat-nav-list>
-        <mat-nav-list>
-          <a mat-list-item routerLink="/quem-somos/missao">Missão</a>
-        </mat-nav-list>
-        <mat-nav-list>
-          <a mat-list-item routerLink="/quem-somos/responsabilidades">Responsabilidades</a>
+          <mat-list-item>
+            <p class="sidenavTitle" mat-list-item routerLink="/projetos">Projetos</p>
+          </mat-list-item>
+          <mat-list-item>
+            <p class="sidenavTitle" mat-list-item routerLink="/criar-projeto">Crie seu projeto</p>
+          </mat-list-item>
         </mat-nav-list>
 
       </mat-expansion-panel>
-      
-      
+
+
+
+
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

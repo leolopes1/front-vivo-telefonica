@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class BibliotecaComponent {
 
+  memorandos = [
+    { tema: 'Memorando direito material'},
+    { tema: 'Memorando descontos'},
+    { tema: 'Memorando agente e principal'},
+    
+  ];
+
+  
+  filtrarProjetos(){}
+
+  
 }

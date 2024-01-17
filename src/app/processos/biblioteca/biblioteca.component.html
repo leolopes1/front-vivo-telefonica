@@ -4,60 +4,33 @@
         <img src="/assets/biblioteca.svg" width="45" height="45" alt="">
         <div class="containerText">
             <p>
-                Biblioteca
+                Memorandos
             </p>
 
         </div>
 
     </div>
-    <div class="containerColuna">
-        <div class="listaContainer">
-            <p class="titleForm">Memorandos</p>
-            <div class="card">
-                <p>Memorando nº1</p>
+    <div class="containerBusca">
+        <p>Buscar Processo</p>
+        <form class="example-form" >
+            <mat-form-field class="searchBar" onsubmit="filtrarProjetos()">
+                <mat-label >Buscar por Memorando</mat-label>
+                <input matInput  (input)="filtrarProjetos()">
+            </mat-form-field>
+            <mat-icon (click)="filtrarProjetos()"> search </mat-icon>
+        </form>
 
-            </div>
-            <div class="card">
-                <p>Memorando nº2</p>
-
-            </div>
-            <div class="card">
-                <p>Memorando nº3</p>
-
-            </div>
-            <div class="card">
-                <p>Memorando nº4</p>
-
-            </div>
-            <div class="card">
-                <p>Memorando nº5</p>
-
-            </div>
-        </div>
-        <div class="listaContainer">
-            <p class="titleForm">Plano de Contas</p>
-            <div class="card">
-                <p>Plano de contas nº254</p>
-
-            </div>
-            <div class="card">
-                <p>Plano de contas nº325</p>
-
-            </div>
-            <div class="card">
-                <p>Plano de contas nº452</p>
-
-            </div>
-            <div class="card">
-                <p>Plano de contas nº200</p>
-
-            </div>
-            <div class="card">
-                <p>Plano de contas nº178</p>
-
-            </div>
-        </div>
     </div>
+
+    <div class="containerCard" *ngFor="let memorando of memorandos">
+
+        <mat-card class="card">
+            <mat-card-content> {{ memorando.tema }}</mat-card-content>
+
+        </mat-card>
+
+    </div>
+
 
 
 </div>

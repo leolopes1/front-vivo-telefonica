@@ -154,12 +154,7 @@
   ],
 
   "equipe":[
-    { 
-      "id":1,
-      "nome": "David Melcon Sanchez Friera", 
-      "cargo": "Dir. de Finanças e de Relações com Invest.", 
-      "imagem": "/assets/fotos/DavidMelconSanchezFriera.jpg" 
-    },
+
     {
       "id":2,
       "nome": "Jaqueline Nogueira de Almeida", 

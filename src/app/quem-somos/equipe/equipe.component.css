@@ -38,6 +38,7 @@
 }
 .example-card{
     margin-bottom: 12px;
+    margin-top: 12px;
 }
 .example-card {
     max-width: 800px;
@@ -121,7 +122,7 @@
 
 .citacaoUsuario{
     font-weight: 500;
-    padding-left: 10px;
+    padding-left: 20px;
     font-size: 14px;
     color: white;
 }
@@ -152,5 +153,13 @@
     display:flex;
     flex-direction: row;
     justify-content: center;
+}
+.colunaBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+
 }
 

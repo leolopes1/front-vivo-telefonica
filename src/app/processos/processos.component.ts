@@ -10,6 +10,13 @@ import { ProjetosService } from '../services/projetos.service';
 export class ProcessosComponent {
   projetos: any[] = [];
   nome: string = '';
+  itos = [
+    { tema: 'ITO Homolog Contábil Next'},
+    { tema: 'Ito 2'},
+    { tema: 'ITO Homolog'},
+    
+  ];
+
 
   constructor(private projetoService: ProjetosService) { }
 
