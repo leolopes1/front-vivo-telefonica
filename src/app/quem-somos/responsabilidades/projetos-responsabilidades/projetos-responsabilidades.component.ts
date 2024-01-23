@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class ProjetosResponsabilidadesComponent {
 
+  lista = [
+    'Garantir a aplicação das Normas Contábeis',
+    'Atuar em projetos apontando as necessidades da Dir. de Contabilidade na criação de produtos e serviços e outros projetos estruturantes.',
+    'Garantir a operacionalização contábil dos novos produtos, serviços e sistemas',
+    'Acompanhamento (postmortem) de novos projetos',
+    'Gerenciar e buscar priorização da lista de demandas internas',
+    'Garantir os controles de SOX',
+    'Garantir a comunicação adequada com a Diretoria sobre novos projetos',
+    'Acompanhamento da entrada de projetos x impacto na receita'
+  ];
+
 }

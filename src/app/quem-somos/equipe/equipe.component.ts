@@ -51,6 +51,8 @@ export class EquipeComponent implements OnInit {
     );
   }
 
+  
+
   ngOnInit() {
     this.buscarColaboradores();
     this.buscarUsuarioReceita();
@@ -69,8 +71,9 @@ export class EquipeComponent implements OnInit {
       }
 
       if (this.usuarioProjetos.length > 0) {
-        this.currentIndexProjetos = (this.currentIndexProjetos + 1) % this.usuarioProjetos.length;
+        this.currentIndexProjetos = (this.currentIndexProjetos) % this.usuarioProjetos.length;
         this.atualizarMembroSelecionadoProjetos();
+        this.currentIndexProjetos++ ;
       }
     }, 9000);
   }

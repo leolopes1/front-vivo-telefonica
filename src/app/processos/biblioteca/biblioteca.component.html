@@ -11,10 +11,10 @@
 
     </div>
     <div class="containerBusca">
-        <p>Buscar Processo</p>
+        
         <form class="example-form" >
             <mat-form-field class="searchBar" onsubmit="filtrarProjetos()">
-                <mat-label >Buscar por Memorando</mat-label>
+                <mat-label >Buscar por memorando</mat-label>
                 <input matInput  (input)="filtrarProjetos()">
             </mat-form-field>
             <mat-icon (click)="filtrarProjetos()"> search </mat-icon>
@@ -22,15 +22,24 @@
 
     </div>
 
-    <div class="containerCard" *ngFor="let memorando of memorandos">
+ 
+    <table mat-table class="projeto-table" [dataSource]="dataSource" matSort>
 
-        <mat-card class="card">
-            <mat-card-content> {{ memorando.tema }}</mat-card-content>
-
-        </mat-card>
-
-    </div>
-
+        <!-- Nome do Projeto Column -->
+        <ng-container matColumnDef="tema">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Tema</th>
+            <td mat-cell *matCellDef="let memorando">{{ memorando.tema }}</td>
+        </ng-container>
+    
+        <!-- Status Column -->
+        <ng-container matColumnDef="data">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Data de encerramento</th>
+            <td mat-cell *matCellDef="let memorando">{{ memorando.data }}</td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="['tema', 'data']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['tema', 'data'];"></tr>
+    </table>
 
 
 </div>

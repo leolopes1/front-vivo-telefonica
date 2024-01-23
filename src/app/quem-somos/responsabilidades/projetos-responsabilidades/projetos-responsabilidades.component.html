@@ -1,78 +1,23 @@
 <div class="boxCentralizador">
-
     <div class="containerText">
-        <p>Responsabilidades de Projetos</p>
-
+      <p>Responsabilidades de Projetos</p>
     </div>
+  
     <div class="containerColuna">
-
-        <div class="listaContainer">
-            
-            <div class="card">
-                <p>Garantir a aplicação das
-                    Normas Contábeis</p>
-
-            </div>
-            <div class="card">
-                <p>
-                    Atuar em projetos
-                    apontando as
-                    necessidades da Dir. de
-                    Contabilidade na criação
-                    de produtos e serviços e
-                    outros projetos
-                    estruturantes.</p>
-
-            </div>
-            <div class="card">
-                <p>Garantir a
-                    operacionalização
-                    contábil dos novos
-                    produtos, serviços e
-                    sistemas</p>
-
-            </div>
-            <div class="card">
-                <p>Acompanhamento
-
-                    (postmortem) de novos
-                    projetos</p>
-
-            </div>
-           
+      <!-- Coluna 1 -->
+      <div class="listaContainer">
+        <div class="card" *ngFor="let responsabilidade of lista.slice(0, 4)">
+          <span class="bullet">&#8226;</span>
+          <p>{{ responsabilidade }}</p>
         </div>
-        <div class="listaContainer">
-            
-            <div class="card">
-                <p>Gerenciar e buscar
-                    priorização da lista de
-                    demandas internas</p>
-
-            </div>
-            <div class="card">
-                <p>
-                    Garantir os controles de
-                    SOX
-                </p>
-
-            </div>
-            <div class="card">
-                <p>
-                    Garantir a comunicação
-                    adequada com a
-                    Diretoria sobre novos
-                    projetos
-                </p>
-
-            </div>
-            <div class="card">
-                <p>
-                    Acompanhamento da
-                    entrada de projetos x
-                    impacto na receita
-                </p>
-
-            </div>
-
+      </div>
+  
+      <!-- Coluna 2 -->
+      <div class="listaContainer">
+        <div class="card" *ngFor="let responsabilidade of lista.slice(4)">
+          <span class="bullet">&#8226;</span>
+          <p>{{ responsabilidade }}</p>
+        </div>
+      </div>
     </div>
-    
+  </div>

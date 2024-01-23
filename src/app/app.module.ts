@@ -30,6 +30,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { MatSelectModule } from '@angular/material/select';
 import { DataService } from './data.service';
 import { MatInputModule } from '@angular/material/input';
+import { MatSortModule } from '@angular/material/sort';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './login/auth.service';
 import { AuthGuard } from './guards/auth.guard';
@@ -114,6 +115,7 @@ import { BibliotecaComponent } from './processos/biblioteca/biblioteca.component
     ReactiveFormsModule,
     MaterialModule,
     CarouselModule,
+    MatSortModule,
     RouterModule.forRoot([])
   ],
   providers: [DataService, AuthService,AuthGuard

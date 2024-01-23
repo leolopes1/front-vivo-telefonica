@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AnaliseReceitasComponent {
 
+  lista = 
+    [
+      'Garantir a integridade e prover a validação da consistência das Receitas para governança e interfaces contábeis',
+      'Prover o suporte de variação da receita à Contabilidade e Planejamento',
+      'Gerenciar o comportamento do negócio e a interação na receita',
+      'Prover as provisões de realização de receita do mês',
+      'Prover a validação da Receita para governança do resultado',
+      'Prover a validação dos impostos provisionados e os realizados',
+      'Prover a validação dos impostos provisionados e os realizados',
+      'Garantir os controles de SOX'
+    ]
+  ;
+
 }

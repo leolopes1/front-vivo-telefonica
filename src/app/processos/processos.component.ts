@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { ProjetosService } from '../services/projetos.service';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
 
 
 @Component({
@@ -7,44 +9,33 @@ import { ProjetosService } from '../services/projetos.service';
   templateUrl: './processos.component.html',
   styleUrls: ['./processos.component.css']
 })
-export class ProcessosComponent {
+export class ProcessosComponent implements AfterViewInit {
+
+  @ViewChild(MatSort) sort: MatSort = new MatSort;
+
   projetos: any[] = [];
   nome: string = '';
   itos = [
-    { tema: 'ITO Homolog Contábil Next'},
-    { tema: 'Ito 2'},
-    { tema: 'ITO Homolog'},
-    
+    { tema: 'ITO Homolog Contábil Next', data:'22/01/23'},
+    { tema: 'Ito 2', data:'22/01/23'},
+    { tema: 'ITO Homolog', data:'22/01/23'},
+
+     
   ];
 
 
-  constructor(private projetoService: ProjetosService) { }
+  // Use MatTableDataSource para suportar ordenação
+  dataSource = new MatTableDataSource(this.itos);
 
-  ngOnInit() {
-    this.buscarProjetos();
-  }
+  // Defina as colunas a serem exibidas
+  displayedColumns: string[] = ['tema', 'data'];
 
-  buscarProjetos() {
-    this.projetoService.buscarProjetos().subscribe(
-      (resultados) => {
-        this.projetos = resultados;
-      },
-      (erro) => {
-        console.error('Erro ao buscar projetos:', erro);
-      }
-    );
+  ngAfterViewInit(): void {
+    this.dataSource.sort = this.sort;
   }
 
   filtrarProjetos() {
-    if (this.nome) {
-      this.projetos = this.projetos.filter(projeto =>
-        projeto.nome.toLowerCase().startsWith(this.nome.toLowerCase())
-      );
-      console.log(this.nome);
-      
-    } else {
-      this.buscarProjetos(); // Se o campo de busca estiver vazio, recarregue todos os projetos
-    }
+    // Lógica de filtragem aqui, se necessário
   }
   
 }

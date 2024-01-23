@@ -6,57 +6,22 @@
     </div>
     <div class="containerColuna">
 
-        <div class="listaContainer">
-
-            <div class="card">
-                <p>Garantir a integridade e prover a validação da
-                    consistência das Receita para governança
-                    interfaces contábeis</p>
-
-            </div>
-            <div class="card">
-                <p>
-                    Prover o suporte de variação da receita à Contabilidade e Planejamento</p>
-
-            </div>
-            <div class="card">
-                <p>Gerenciar o comportamento do negócio e a interação na receita
-                </p>
-
-            </div>
-            <div class="card">
-                <p>Prover as provisões de realização de receita do mês</p>
-
+        <div class="containerColuna">
+            <!-- Coluna 1 -->
+            <div class="listaContainer">
+                <div class="card" *ngFor="let responsabilidade of lista.slice(0, 4)">
+                    <span class="bullet">&#8226;</span>
+                    <p>{{ responsabilidade }}</p>
+                </div>
             </div>
 
+            <!-- Coluna 2 -->
+            <div class="listaContainer">
+                <div class="card" *ngFor="let responsabilidade of lista.slice(4)">
+                    <span class="bullet">&#8226;</span>
+                    <p>{{ responsabilidade }}</p>
+                </div>
+            </div>
         </div>
-        <div class="listaContainer">
 
-            <div class="card">
-                <p>Prover a validação da Receita para governança do resultado
-                </p>
-
-            </div>
-            <div class="card">
-                <p>
-                    Prover a validação dos impostos provisionados e os realizados
-
-                </p>
-
-            </div>
-            <div class="card">
-                <p>
-                    Prover a validação dos impostos provisionados e os realizados
-
-                </p>
-
-            </div>
-            <div class="card">
-                <p>
-                    Garantir os controles de SOX
-
-                </p>
-
-            </div>
-
-        </div>
+    </div>
