@@ -26,9 +26,9 @@ export class FiquePorDentroComponent {
 
   ];
   links = [
-    { title:'CRC'  , url:'https://online.crcsp.org.br/portal/index.asp#', img:'/assets/logo-crcsp.png'},
-    { title:'CPC'  , url:'https://www.cpc.org.br/CPC', img:'/assets/cpc.png' },
-    { title:'Práticas Contábeis'  , url:'https://telefonicacorp.sharepoint.com/sites/PortaldePoliticasContables.OCETG/SitePages/home.aspx',img:'/assets/vivinho.png'},
+    { title:'CRC'  , url:'https://online.crcsp.org.br/portal/index.asp#', img:'/assets/Vivinho-RGB.png'},
+    { title:'CPC'  , url:'https://www.cpc.org.br/CPC', img:'/assets/Vivinho-RGB.png' },
+    { title:'Práticas Contábeis'  , url:'https://telefonicacorp.sharepoint.com/sites/PortaldePoliticasContables.OCETG/SitePages/home.aspx',img:'/assets/Vivinho-RGB.png'},
   ]
 
 }

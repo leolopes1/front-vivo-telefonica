@@ -24,17 +24,7 @@
 
         </div>
     </div>
-    <!-- <div class="containerCard"  *ngFor="let projeto of projetos" [routerLink]="['/projetos', projeto.id]">
-        <div class="containerStatus">
-            {{ projeto.status }}
 
-        </div>
-        <mat-card class="card" > 
-            <mat-card-content> {{ projeto.nome }}</mat-card-content>
-            
-        </mat-card>
-        
-    </div> -->
     <table mat-table class="projeto-table" [dataSource]="projetos">
 
 
@@ -52,7 +42,7 @@
 
         
 
-        <tr mat-header-row *matHeaderRowDef="['status', 'nome']"></tr>
-        <tr mat-row *matRowDef="let row; columns: ['status', 'nome'];" [routerLink]="['/projetos', row.id]"></tr>
+        <tr mat-header-row *matHeaderRowDef="['nome', 'status']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['nome', 'status'];" [routerLink]="['/projetos', row.id]"></tr>
     </table>
 </div>

@@ -41,12 +41,12 @@
     <p class="textoPrincipal">Links Úteis</p>
     <div class="centralizadorLinks">
       <div class="cardLinks" *ngFor="let link of links">
-        <a href="{{ link.url }}">
+        <a href="{{ link.url }}" target="_blank">
           <div class="conteinertxt">
 
             <p class="linkTitle">{{link.title}}</p>
           </div>
-          <img src="{{link.img}}" alt="image" width="100" height="80" class="imgVivinho">
+          <img src="{{link.img}}" alt="image" width="80" height="80" class="imgVivinho">
         </a>
       </div>
 

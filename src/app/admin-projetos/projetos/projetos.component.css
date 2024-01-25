@@ -79,14 +79,21 @@
     text-align: left;
     padding: 8px;
   }
-  .projeto-table thead {
-    background-color: #660099; /* Cor de fundo fixa para o cabeçalho */
-    color: #ffffff; /* Cor do texto no cabeçalho */
-  }
+
     
 
   
   .projeto-table tr:hover {
     background-color: #660099; 
     color: #ffffff; 
+  }
+
+  .projeto-table thead {
+
+    color: #000000; /* Cor do texto no cabeçalho, ajustado para preto */
+  }
+  
+  .projeto-table th {
+    color: #000000; /* Cor do texto nas células do cabeçalho, ajustado para preto */
+    background-color: #dddddd;
   }

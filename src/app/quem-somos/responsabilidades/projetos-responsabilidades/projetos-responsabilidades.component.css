@@ -73,8 +73,12 @@
 }
 
 .bullet {
-    margin-right: 8px;
-    font-size: 16px; /* Tamanho da fonte do bullet */
-    color: #660099; /* Cor roxa do bullet */
-    size: 16px;
+  color:#660099; /* ou qualquer outra cor desejada */
+  font-size: 30px; /* ou ajuste conforme necessário */
+  margin-right: 5px; /* ou ajuste conforme necessário */
+}
+.responsabilidadeItem{
+    margin-left: 13px;
+    
+
 }

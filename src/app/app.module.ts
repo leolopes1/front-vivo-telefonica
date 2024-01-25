@@ -28,6 +28,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatPaginatorModule} from '@angular/material/paginator';
 import { DataService } from './data.service';
 import { MatInputModule } from '@angular/material/input';
 import { MatSortModule } from '@angular/material/sort';
@@ -55,6 +57,7 @@ import { AnaliseReceitasComponent } from './quem-somos/responsabilidades/analise
 import { ProjetosResponsabilidadesComponent } from './quem-somos/responsabilidades/projetos-responsabilidades/projetos-responsabilidades.component';
 import { ProcessosComponent } from './processos/processos.component';
 import { BibliotecaComponent } from './processos/biblioteca/biblioteca.component';
+import { ChatComponent } from './chat/chat.component';
 
 
 @NgModule({
@@ -83,6 +86,7 @@ import { BibliotecaComponent } from './processos/biblioteca/biblioteca.component
     ProjetosResponsabilidadesComponent,
     ProcessosComponent,
     BibliotecaComponent,
+    ChatComponent,
   ],
   imports: [
     BrowserModule,
@@ -96,6 +100,7 @@ import { BibliotecaComponent } from './processos/biblioteca/biblioteca.component
     MatSlideToggleModule,
     MatCardModule,
     MatCheckboxModule,
+    MatDialogModule,
     CarouselModule,
     MatIconModule,
     MatFormFieldModule, // Add MatFormFieldModule to the imports array
@@ -108,6 +113,7 @@ import { BibliotecaComponent } from './processos/biblioteca/biblioteca.component
     MatRadioModule,
     MatDividerModule,
     MatExpansionModule,
+    MatPaginatorModule,
     MatTabsModule,
     MatTooltipModule,
     MatCardModule,

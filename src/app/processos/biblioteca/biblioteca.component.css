@@ -95,3 +95,7 @@
     background-color: #660099; 
     color: #ffffff; 
   }
+  .projeto-table th {
+    color: #000000; /* Cor do texto nas células do cabeçalho, ajustado para preto */
+    background-color: #dddddd;
+  }

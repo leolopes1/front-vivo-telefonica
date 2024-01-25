@@ -7,35 +7,40 @@
   margin: 0;
   min-height: 100%;
   margin-left: 0px;
- 
-}  
+
+}
 
 .app-sidenav {
   width: 230px;
   height: 100%;
-  
-  
+
+
 }
+
 .app-sidenav-content {
-  
+
   height: 100%;
-  overflow: hidden; /* Hide scrollbars */
+  overflow: hidden;
+  /* Hide scrollbars */
   padding: 12px;
 
-  
-}
-.sidenavTitle{
-  font-size: small;
-  padding: 0px;
-  margin: 0;
-  
 
 }
+
+.sidenavTitle {
+  font-size: 13px;
+  padding: 0px;
+  margin: 0;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000; /* ou qualquer outra cor desejada */
+}
+
 .mdc-list-item {
   padding-left: 23px;
   padding-right: 16px;
   font-weight: 600;
-  
+
 }
 
 .menu {
@@ -47,9 +52,9 @@
   list-style-type: none;
   padding: 100;
   margin: 0;
-  display: flexbox;
+  display: flex;
   justify-content: center;
-  
+
 }
 
 .menu li {
@@ -58,42 +63,67 @@
 
 .menu li a {
   text-decoration: solid;
-  color: #461E5F; /* cor da letra QUEM SOMOS NOS */
+  color: #461E5F;
+  /* cor da letra QUEM SOMOS NOS */
 }
 
 .a {
-  font-weight:500 ;
+  font-weight: 500;
   font-size: 16px;
   color: #660099;
   display: flex;
   margin-top: 10px;
+  text-decoration: none;
 
 }
-.containerLogo{
+
+.containerLogo {
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  margin:20px;
+  margin: 20px;
   align-items: center;
   font-weight: 500;
 }
-.toolbar{
-  height:100px
+
+.toolbar {
+  height: 100px
 }
-.icon{
+
+.icon {
   width: 44px;
   height: 36px;
 }
+
 .mat-content {
   display: flex;
   flex: 1;
   flex-direction: row;
   overflow: hidden;
-  
+
 }
-.zeraMargem{
+
+.zeraMargem {
   margin-left: 0px;
 }
-.sidenavNome{
+
+.sidenavNome {
   font-weight: 500;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.fab-button {
+  position: fixed;
+  bottom: 16px;
+  /* ou a distância desejada do fundo */
+  right: 16px;
+  /* ou a distância desejada da direita */
+  z-index: 2;
+  /* para garantir que o botão esteja acima de outros elementos */
+  background-color: #660099
 }
