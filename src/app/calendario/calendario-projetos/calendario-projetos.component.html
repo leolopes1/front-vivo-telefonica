@@ -1,10 +1,10 @@
 <div class="containerCentralizador">
 
     <div class="containerIcon">
-        <img src="/assets/foguete.svg" width="45" height="45" alt="">
+        <img src="/assets/Calendario.svg" width="55" height="55" alt="">
         <div class="containerText">
             <p>
-                Instruções de Trabalho 
+                Calendário de Projetos 
             </p>
 
         </div>
@@ -16,7 +16,7 @@
 
             <form class="example-form" >
                 <mat-form-field class="searchBar" onsubmit="filtrarProjetos()">
-                    <mat-label >Buscar por ITO</mat-label>
+                    <mat-label >Buscar atividade</mat-label>
                     <input matInput (input)="filtrarProjetos()">
                 </mat-form-field>
                 <mat-icon (click)="filtrarProjetos()"> search </mat-icon>
@@ -36,20 +36,20 @@
 
         <!-- Nome do Projeto Column -->
         <ng-container matColumnDef="tema">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Tema</th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Atividade</th>
             <td mat-cell *matCellDef="let ito">{{ ito.tema }}</td>
         </ng-container>
     
         <!-- Status Column -->
-        <ng-container matColumnDef="versao">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Versão</th>
-            <td mat-cell *matCellDef="let ito">{{ ito.versao }}</td>
+        <ng-container matColumnDef="data">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Data</th>
+            <td mat-cell *matCellDef="let ito">{{ ito.data }}</td>
         </ng-container>
     
-        <tr mat-header-row *matHeaderRowDef="['tema', 'versao']"></tr>
-        <tr mat-row *matRowDef="let row; columns: ['tema', 'versao'];"></tr>
+        <tr mat-header-row *matHeaderRowDef="['data', 'tema']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['data', 'tema'];"></tr>
     </table>
-    <mat-paginator [pageSizeOptions]="[5]" showFirstLastButtons>
+    <mat-paginator [pageSizeOptions]="[5,10,15,20]" showFirstLastButtons>
 
     </mat-paginator>
     

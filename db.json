@@ -56,19 +56,21 @@
     },
     {
       "id":2,
-      "nome":"Cleia",
-      "frase":"Ando devagar porque já tive pressa",
+      "nome":"Cleia Alcântara",
+      "frase":"Bazinga!",
       "funcao":"Analista Contr. Oper. Fin. SR",
+      "email":"cleia.silva@telefonica.com",
       "url":"/assets/fotos/Cleia.jpg",
-      "atribuicao":["Contabilização da Digital: Atlys","Billing de Dados","Esteira Digital","Contabilização Pré-pago: Ngin"] 
+      "atribuicao":["Forecast Móvel ","Contabilização: Pré Pago/ Controle/ Controle N/Easy/MVNO","Indicador móvel","Validação Receita Móvel (Pré Pago/ Controle/ Controle N/Easy/MVNO)","Validação de Impostos"] 
     },
     {
       "id":3,
-      "nome":"Adriana",
-      "frase":"Tenha fé, tenha esperança e acredite! Você é mais forte do que pensa ser",
+      "nome":"Adriana Simões",
+      "frase":"Em cada desafio, eu vejo uma oportunidade de vencer.",
       "funcao":"Consultor Contr Oper. Fin.",
+      "email":"adriana.simoes@telefonica.com",
       "url":"/assets/fotos/Adriana.jpg",
-      "atribuicao":["Coordenação de atividades e apoio a auditoria"]
+      "atribuicao":["Apoio Técnico Receita","Validação e liberação contabilização Next","Validação Receita Next","Elaboração indicador a faturar x faturado","Composição e análise do a faturar","Análise e liberação da apresentação Receita"]
     },
     
     
@@ -77,16 +79,18 @@
       "nome":"Ian Victor",
       "frase":"Custe o que custar, faça o que for preciso",
       "funcao":"Estagiário",
+      "email":"ian.alencar@telefonica.com",
       "url":"/assets/fotos/Ian.jpg",
-      "atribuicao":["Mapeamento de Processos"]
+      "atribuicao":["Serviços Financeiros","Cobilling Sainte Pré e Pós","Advertising","Cobilling Entrante Pós"]
     },
     {
       "id":7,
-      "nome":"Keren",
-      "frase":"Nunca perca quem você é por ninguém e nunca esqueça o seu valor",
+      "nome":"Keren Zagarra",
+      "frase":"Não esqueça quem você é, nem seu propósito de vida.",
       "funcao":"Analista Contr. Oper. Fin. SR",
+      "email":"keren.zegarra@telefonica.com",
       "url":"/assets/fotos/Keren.jpg",
-      "atribuicao":["Forecast móvel","Contabilização da Móvel: Next e Atlys","Cronograma de fechamento"]
+      "atribuicao":["Forecast móvel","Contabilização: Atlys móvel TBRA/TERRA ","Next Móvel TBRA/TERRA","Indicador móvel","Validação de Impostos e validação forecast ","Demais demandas relacionadas"]
     },
     {
       "id":8,
@@ -101,6 +105,7 @@
       "nome":"Luiz Gustavo",
       "frase":"Histórias, nossas histórias, dias de luta, dias de glória",
       "funcao":"Analista Contr. Oper. Fin. PL",
+      "email":"luiz.baesso@telefonica.com",
       "url":"/assets/fotos/LuizGustavo.jpg",
       "atribuicao":["Contabilização da Fixa: Cso,Fatcob"]
     }
@@ -111,43 +116,47 @@
     {
       "id":1,
       "nome":"Erika",
-      "frase":"Bora comemorar",
+      "frase":"Todos os dias temos a oportunidade de aprender ou ensinar...",
       "funcao":"Consultor Contabilidade",
       "url":"/assets/fotos/Erika.jpg",
-      "atribuicao":["Projetos Estruturantes","Comitê de Ofertas,Fluxo de NP&S","Demandas PPs"]
+      "atribuicao":["Projetos Estruturantes","Comitê de Ofertas","Demandas PPs","Demandas Internas - PPs","NP&S","Fluxo P&S"]
     },
     {
       "id":2,
       "nome":"Valeria",
       "frase":"Quem elegeu a busca, não pode recusar a travessia",
       "funcao":"Analista Contábil Sr",
+      "email":"valeria.oliveira@telefonica.com",
       "url":"/assets/fotos/Valeria.jpg",
-      "atribuicao":["Fluxo de P&S","Comitê de Ofertas","Fluxo de NP&S"]
+      "atribuicao":["P&S","Comitê de Ofertas","NP&S","Demandas Internas - PPs"]
       
     },
     {
       "id":3,
-      "nome":"Shayenne",
+      "nome":"Shayenne de Sousa",
       "frase":"A humildade antecede a honra",
-      "funcao":"Consultor Contabilidade",
+      "funcao":"Consultora Contabilidade",
+      "email":"shayenne.silva@telefonica.com",
       "url":"/assets/fotos/Shayenne.jpg",
-      "atribuicao":["Projetos Estruturantes","Demandas Internas", "Parametrização Next"]
+      "atribuicao":["Projetos Estruturantes","Demandas Internas", "Parametrização Next","Fluxo P&S"]
     },
     {
       "id":4,
-      "nome":"Raisa",
-      "frase":"Não coloque todas as suas esperanças em mudanças da noite para o dia.",
-      "funcao":"Estagiária",
+      "nome":"Raisa Carvalho",
+      "frase":"Seja sempre a sua melhor versão.",
+      "funcao":"Analista Contábil Pleno",
+      "email":"raisa.conegundes@telefonica.com",
       "url":"/assets/fotos/Raisa.jpg",
-      "atribuicao":["Fluxo de P&S","Comunicado de Release","Homologações"]
+      "atribuicao":["Contabilização","Móvel - Cloud e IOT","Dados - TBRA, Cloud e IOT","Esteira Digital - TBRA e Cloud"]
     },
     {
       "id":5,
       "nome":"Fabiana",
       "frase":"Viva a Vida Plena",
       "funcao":"Consultor Contabilidade",
+      "email":"fabianag.santos@telefonica.com",
       "url":"/assets/fotos/Fabiana.jpg",
-      "atribuicao":["Projetos Estruturantes","NFCOM","Fênix"]
+      "atribuicao":["Projetos Estruturantes","Fluxo P&S"]
     
     }
     

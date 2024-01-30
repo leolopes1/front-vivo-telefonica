@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <table mat-table class="projeto-table" [dataSource]="projetos">
+    <table mat-table class="projeto-table" [dataSource]="dataSource" matSort MatPaginator>
 
 
         <!-- Nome do Projeto Column -->
@@ -45,4 +45,7 @@
         <tr mat-header-row *matHeaderRowDef="['nome', 'status']"></tr>
         <tr mat-row *matRowDef="let row; columns: ['nome', 'status'];" [routerLink]="['/projetos', row.id]"></tr>
     </table>
+    <mat-paginator [pageSizeOptions]="[5]" showFirstLastButtons>
+
+    </mat-paginator>
 </div>

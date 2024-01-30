@@ -1,17 +1,14 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
-import { ProjetosService } from '../services/projetos.service';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 
-
 @Component({
-  selector: 'app-projetos',
-  templateUrl: './processos.component.html',
-  styleUrls: ['./processos.component.css']
+  selector: 'app-calendario-receitas',
+  templateUrl: './calendario-receitas.component.html',
+  styleUrls: ['./calendario-receitas.component.css']
 })
-export class ProcessosComponent implements AfterViewInit {
-
+export class CalendarioReceitasComponent implements AfterViewInit{
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -19,13 +16,14 @@ export class ProcessosComponent implements AfterViewInit {
   itensPorPagina = 8;
   
   itos = [
-    { tema: 'ITO Homolog Contábil Next', versao:'1.0'},
-    { tema: 'Ito 2', versao:'1.5'},
-    { tema: 'ITO Homolog', versao:'2.0'},
-    
-
-     
-  ];
+    { tema: 'Indicadores a faturar', data:'01/12/2023'},
+    { tema: 'Apresentação diretoria', data:'06/12/2023'},
+    { tema: 'Primeiro Forecast', data:'7/12/2023'},
+    { tema: 'Auditoria Sox', data:'26/12/2023'},
+    { tema: 'Envio das provisões/ Faturamento (Data limite)', data:'27/12/2023'},
+    { tema: 'Comitê de Ingressos', data:'28/12/2023'},
+    { tema: 'Validação da receita/ Impostos/ Forecast/ Envio dos prints', data:'29/12/2023'},
+  ]
 
   // Use MatTableDataSource para suportar ordenação
   dataSource = new MatTableDataSource(this.itos);
@@ -41,5 +39,6 @@ export class ProcessosComponent implements AfterViewInit {
   filtrarProjetos() {
     // Lógica de filtragem aqui, se necessário
   }
-  
+
+
 }

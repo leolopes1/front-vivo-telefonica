@@ -27,6 +27,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatPaginatorModule} from '@angular/material/paginator';
@@ -58,6 +61,9 @@ import { ProjetosResponsabilidadesComponent } from './quem-somos/responsabilidad
 import { ProcessosComponent } from './processos/processos.component';
 import { BibliotecaComponent } from './processos/biblioteca/biblioteca.component';
 import { ChatComponent } from './chat/chat.component';
+import { HistoricoReleaseComponent } from './fique-por-dentro/historico-release/historico-release.component';
+import { CalendarioReceitasComponent } from './calendario/calendario-receitas/calendario-receitas.component';
+import { CalendarioProjetosComponent } from './calendario/calendario-projetos/calendario-projetos.component';
 
 
 @NgModule({
@@ -87,6 +93,9 @@ import { ChatComponent } from './chat/chat.component';
     ProcessosComponent,
     BibliotecaComponent,
     ChatComponent,
+    HistoricoReleaseComponent,
+    CalendarioReceitasComponent,
+    CalendarioProjetosComponent,
   ],
   imports: [
     BrowserModule,
@@ -101,6 +110,8 @@ import { ChatComponent } from './chat/chat.component';
     MatCardModule,
     MatCheckboxModule,
     MatDialogModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
     CarouselModule,
     MatIconModule,
     MatFormFieldModule, // Add MatFormFieldModule to the imports array

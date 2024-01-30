@@ -3,14 +3,17 @@
       <p class="titlePagina">Conheça nosso time</p>
       <div class="colunaBox">
          <mat-card class="example-card" *ngFor="let membro of equipe">
-            <p></p>
+   
             <mat-card-content class="content">
                <div class="colunaContainer">
-                  <img [src]="membro.imagem" alt="image" width="125" height="105">
+                  <img [src]="membro.imagem" alt="image"  class="imgEquipe">
                   <div class="descricaoCard">
                      <p class="cardTitle">{{ membro.nome }}</p>
                      <p>{{ membro.cargo }}</p>
                   </div>
+               </div>
+               <div >
+                  <img src="/assets/Vivinho-Branco.png" class="vivinho" alt="">
                </div>
             </mat-card-content>
          </mat-card>
@@ -34,7 +37,7 @@
                {{membroSelecionadoReceitas.funcao}}
             </div>
             <div class="textDescricao">
-               <a>contato@telefonica.com</a>
+               {{membroSelecionadoReceitas.email}}
             </div>
             
             <div class="textDescricao">
@@ -63,7 +66,7 @@
                {{membroSelecionadoProjetos.funcao}}
             </div>
             <div class="textDescricao">
-               <a>contato@telefonica.com</a>
+               {{membroSelecionadoProjetos.email}}
             </div>
             <div class="textDescricao">
                <ul>

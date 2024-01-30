@@ -14,21 +14,21 @@ export class FiquePorDentroComponent {
   imagem2 = 'https://s3-alpha-sig.figma.com/img/48b9/cac2/c4973121778f0fa174a8d70662608697?Expires=1700438400&Signature=K16YMbHvmji5kUyL60uulhWUD8R8udOlzwYR8Ki6i8-Ce-pCRUiiftgEaMNvISZThrwvtXoVKYs3KY~y1YQ9tQ9SnlbsaxKQ3f~SzjwO8IgaP5YTEp7UWV9FZXi4AresydQquqKAHN5vUg5LPX9~jfvIp14O1RtZeEr7Fkr-GGoXcnCqLGKecSci7~vNaKqzGNLGwHJApMqFMC5Nql4pLmeyEFd7oyEg1Rv4jxo98WhCnNhRy3WaxubHVgI2YDzRTYQy0eeNIpV1~Gz2OKbwBHIQdz5-IJkysLpPDhfmiQyL~pA6j8lEmsNPLiUJFrmDPd8IDQ-nHPwywssVs~d4fg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
   imagem3 = 'https://s3-alpha-sig.figma.com/img/388a/33db/c0fc29a2f9da58a15fd22d9e3011af56?Expires=1700438400&Signature=jV8rdaGxSTCqD7gCz1kt1eFyTc4lDiZIb7F-GpBRnESXNwQBB47u0fM5qwsFMd-DIPw6Lx2sJU0tZ6HyrpHnrwgRs9G2Aro~PKTRt730MZd2CjQLbEu~e-J23Snyy4z-AV-ogFtpAfCJ-TJxXDCQWm-hpIPNuCFVmCqGiHz~yF69hDwTbRDQu19cBXXR~aJlY~6tj~AMHMpxoeppq5QPNiqNvTMrUiV~MDt-ADfIw5ZpkZzoWd5gdDW4-6dt2atWZQrECYUhxFRR0n6hesfYcDQxTEUa11M~n-9fAROO4dfHGZpdy~KhaXwdh9tzviGIPxzvjpbgedEP4b5TE6pmAw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
   cards = [
-    { image: this.firstimage, description: 'É um arquivo gerado mensalmente após a release com os projetos entregues e informações relevantes', title: 'Comunicado de Release' },
+    { image: this.firstimage, description: 'É um arquivo gerado mensalmente após a release com os projetos entregues e informações relevantes', title: 'Comunicado de Release' , url:'/release'},
     { image: this.thirdimage, description: '', title: 'Workplace', url: 'https://work.me/g/IbDLBLvIZ/KCx1ftc7' },
     { image: this.secondimage, description: 'Confira os aniversariantes do mês', title: 'Outros' },
 
   ];
   noticias = [
-    { image: this.imagem1, description: 'Esta é uma informação pública e divulgada a cada trimestre', title: 'Publicação de Resultado', url: 'https://ri.telefonica.com.br/' },
-    { image: this.imagem2, description: 'Esta é uma informação pública e divulgada a cada trimestre', title: 'Fatos Relevantes', url: 'https://ri.telefonica.com.br/' },
+    { image: this.imagem2, description: 'Esta é uma informação pública e divulgada a cada trimestre', title: 'Fatos Relevantes', url: 'https://ri.telefonica.com.br/resultados-e-comunicados/comunicados/' },
+    { image: this.imagem1, description: 'Esta é uma informação pública e divulgada a cada trimestre', title: 'Publicação de Resultados', url: 'https://ri.telefonica.com.br/resultados-e-comunicados/central-de-resultados/' },
 
 
   ];
   links = [
-    { title:'CRC'  , url:'https://online.crcsp.org.br/portal/index.asp#', img:'/assets/Vivinho-RGB.png'},
-    { title:'CPC'  , url:'https://www.cpc.org.br/CPC', img:'/assets/Vivinho-RGB.png' },
-    { title:'Práticas Contábeis'  , url:'https://telefonicacorp.sharepoint.com/sites/PortaldePoliticasContables.OCETG/SitePages/home.aspx',img:'/assets/Vivinho-RGB.png'},
+    { title:'CPC'  , url:'https://www.cpc.org.br/CPC', img:'/assets/computer.svg' },
+    { title:'CRC'  , url:'https://online.crcsp.org.br/portal/index.asp#', img:'/assets/computer.svg'},
+    { title:'Práticas Contábeis'  , url:'https://telefonicacorp.sharepoint.com/sites/PortaldePoliticasContables.OCETG/SitePages/home.aspx',img:'/assets/computer.svg'},
   ]
 
 }

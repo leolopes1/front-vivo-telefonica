@@ -3,7 +3,7 @@
     <p class="textoPrincipal">Comunicados</p>
   </div>
   <div class="comunicadosContainer">
-    <a *ngFor="let card of cards" href="{{ card.url }}" target="_blank">
+    <a *ngFor="let card of cards" href="{{ card.url }}" target="">
       <div class="cardNoticia">
         <div class="cardBackground" [style.background-image]="'url(' + card.image + ')'">
           <div class="cardContent">
@@ -42,11 +42,15 @@
     <div class="centralizadorLinks">
       <div class="cardLinks" *ngFor="let link of links">
         <a href="{{ link.url }}" target="_blank">
+          <div class="imgVivinho">
+            <img src="{{link.img}}" alt="image" width="80" height="80" >
+
+          </div>
+          
           <div class="conteinertxt">
 
             <p class="linkTitle">{{link.title}}</p>
           </div>
-          <img src="{{link.img}}" alt="image" width="80" height="80" class="imgVivinho">
         </a>
       </div>
 

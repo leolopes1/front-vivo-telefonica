@@ -10,21 +10,21 @@ import { MatPaginator } from '@angular/material/paginator';
 })
 export class BibliotecaComponent implements AfterViewInit {
   
-  @ViewChild(MatSort) sort: MatSort = new MatSort;
-  @ViewChild('paginator') paginator: MatPaginator | undefined;
+  @ViewChild(MatSort) sort!: MatSort;
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   paginaAtual = 0;
-  itensPorPagina = 5;
+  itensPorPagina = 8;
   
   memorandos = [
-    { tema: 'Memorando direito material', versao: '10/12/2022'},
-    { tema: 'Memorando descontos', versao: '01/01/2023' },
-    { tema: 'Memorando agente e principal', versao: '01/01/2024'},
-    { tema: 'Memorando agente e principal', versao: '01/01/2024'},
-    { tema: 'Memorando agente e principal', versao: '01/01/2024'},
-    { tema: 'Memorando agente e principal', versao: '01/01/2024'},
-    { tema: 'Memorando agente e principal', versao: '01/01/2024'},
-    { tema: 'Memorando agente e principal', versao: '01/01/2024'},
+    { tema: 'Memorando direito material', versao: '1.0'},
+    { tema: 'Memorando descontos', versao: '1.0' },
+    { tema: 'Memorando agente e principal', versao: '1.0'},
+    { tema: 'Memorando agente e principal', versao: '1.2'},
+    { tema: 'Memorando agente e principal', versao: '1.3'},
+    { tema: 'Memorando agente e principal', versao: '1.4'},
+    { tema: 'Memorando agente e principal', versao: '1.5'},
+    { tema: 'Memorando agente e principal', versao: '1.0'},
   ];
 
   // Use MatTableDataSource para suportar ordenação
@@ -35,6 +35,7 @@ export class BibliotecaComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
   }
 
   filtrarProjetos() {

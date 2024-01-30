@@ -1,17 +1,14 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
-import { ProjetosService } from '../services/projetos.service';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 
-
 @Component({
-  selector: 'app-projetos',
-  templateUrl: './processos.component.html',
-  styleUrls: ['./processos.component.css']
+  selector: 'app-historico-release',
+  templateUrl: './historico-release.component.html',
+  styleUrls: ['./historico-release.component.css']
 })
-export class ProcessosComponent implements AfterViewInit {
-
+export class HistoricoReleaseComponent implements AfterViewInit {
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -19,9 +16,9 @@ export class ProcessosComponent implements AfterViewInit {
   itensPorPagina = 8;
   
   itos = [
-    { tema: 'ITO Homolog Contábil Next', versao:'1.0'},
-    { tema: 'Ito 2', versao:'1.5'},
-    { tema: 'ITO Homolog', versao:'2.0'},
+    { tema: 'Release Fevereiro', versao:'10/02/2022'},
+    { tema: 'Release Maio', versao:'12/05/2022'},
+    { tema: 'Release Agosto', versao:'20/08/2022'},
     
 
      
@@ -41,5 +38,5 @@ export class ProcessosComponent implements AfterViewInit {
   filtrarProjetos() {
     // Lógica de filtragem aqui, se necessário
   }
-  
+
 }
