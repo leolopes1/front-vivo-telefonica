@@ -1,25 +1,43 @@
 <div class="boxCentralizador">
-  <div class="containerText">
-    <p>Responsabilidades de Projetos</p>
-  </div>
 
-  <div class="containerColuna">
-    <!-- Coluna 1 -->
-    <div class="listaContainer">
-      <div class="card" *ngFor="let responsabilidade of lista.slice(0, 4)">
-        <div></div>
-        <i class="material-icons bullet">fiber_manual_record</i>
-        <div class="responsabilidadeItem"></div>
-        <p>{{ responsabilidade }}</p>
-      </div>
-    </div>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title class="title">Missão de Projetos</mat-card-title>
+    </mat-card-header>
 
-    <!-- Coluna 2 -->
-    <div class="listaContainer">
-      <div class="card" *ngFor="let responsabilidade of lista.slice(4)">
-        <i class="material-icons bullet">fiber_manual_record</i>
-        <p>{{ responsabilidade }}</p>
+    <mat-card-content class="content">
+      <p>{{missao}}</p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title class="title">Responsabilidades de Projetos</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content class="content">
+
+      <div class="containerColuna">
+        <!-- Coluna 1 -->
+        <div class="listaContainer">
+          <div class="card" *ngFor="let responsabilidade of lista.slice(0, 4)">
+            <div></div>
+            <i class="material-icons bullet">fiber_manual_record</i>
+            <div class="responsabilidadeItem"></div>
+            <p>{{ responsabilidade }}</p>
+          </div>
+        </div>
+
+        <!-- Coluna 2 -->
+        <div class="listaContainer">
+          <div class="card" *ngFor="let responsabilidade of lista.slice(4)">
+            <i class="material-icons bullet">fiber_manual_record</i>
+            <p>{{ responsabilidade }}</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+
+
+
+    </mat-card-content>
+  </mat-card>
 </div>

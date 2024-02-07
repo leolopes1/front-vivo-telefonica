@@ -17,5 +17,8 @@ export class ProjetosResponsabilidadesComponent {
     'Garantir a comunicação adequada com a Diretoria sobre novos projetos',
     'Acompanhamento da entrada de projetos x impacto na receita'
   ];
+  missao = `Atuar em projetos apontando as necessidades da Diretoria de Contabilidade na criação de produtos e
+  serviços e outros projetos estruturantes, em conformidade com as normas afim de garantir a
+  operacionalização contábil.`
 
 }

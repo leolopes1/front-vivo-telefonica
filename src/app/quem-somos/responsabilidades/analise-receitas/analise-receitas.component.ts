@@ -20,4 +20,8 @@ export class AnaliseReceitasComponent {
     ]
   ;
 
+  missao = `Garantir a integridade e consistência das interfaces contábeis, bem como, prover o cálculo das
+  estimativas para o ajuste de competência e com isso gerenciar o comportamento do negócio
+  através de análise de variações e controles SOX.`
+
 }

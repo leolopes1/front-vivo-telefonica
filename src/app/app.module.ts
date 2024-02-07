@@ -64,6 +64,7 @@ import { ChatComponent } from './chat/chat.component';
 import { HistoricoReleaseComponent } from './fique-por-dentro/historico-release/historico-release.component';
 import { CalendarioReceitasComponent } from './calendario/calendario-receitas/calendario-receitas.component';
 import { CalendarioProjetosComponent } from './calendario/calendario-projetos/calendario-projetos.component';
+import { AvisosComponent } from './fique-por-dentro/avisos/avisos.component';
 
 
 @NgModule({
@@ -96,6 +97,7 @@ import { CalendarioProjetosComponent } from './calendario/calendario-projetos/ca
     HistoricoReleaseComponent,
     CalendarioReceitasComponent,
     CalendarioProjetosComponent,
+    AvisosComponent,
   ],
   imports: [
     BrowserModule,

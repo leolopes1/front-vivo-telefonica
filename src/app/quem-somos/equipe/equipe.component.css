@@ -39,6 +39,7 @@
 .cardTitle {
     font-size: 20px;
     font-weight: 600;
+    color: #660099;
 }
 
 .example-card {
@@ -92,6 +93,13 @@
     flex-direction: column;
     width: 60%;
 }
+.atribuicaoContainer{
+    display: flex;
+    align-content: flex-start;
+    margin: 0;
+    padding-left: 0;
+    color: white;
+}
 
 .containerDescricao {
     display: flex;
@@ -141,10 +149,16 @@
 
 
 .citacaoUsuario {
-    font-weight: 500;
-    padding-left: 20px;
-    font-size: 14px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%; /* Para ocupar a largura total do cardPhone */
     color: white;
+    padding-left: 26px; /* Ajuste conforme necessário */
+    justify-content: center;
+    width: 250px;
+    
 }
 
 .textWhite {

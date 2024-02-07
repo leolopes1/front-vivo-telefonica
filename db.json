@@ -51,6 +51,7 @@
       "nome":"Vivian",
       "frase":"Não desista dos seus sonhos",
       "funcao":"Consultor Planej. e Controle",
+      "email":"",
       "url":"/assets/fotos/Vivian.jpg",
       "atribuicao":["Forecast Fixa","Contabilização da Fixa: Next, Kenan"]
     },
@@ -97,6 +98,7 @@
       "nome":"Lucas",
       "frase":"Você não é derrotado quando perde. Você é derrotado quando desiste",
       "funcao":"Estagiário",
+      "email":"",
       "url":"/assets/fotos/Lucas.jpg",
       "atribuicao":["Automação e Digitalização de Processos"]
     },
@@ -118,6 +120,7 @@
       "nome":"Erika",
       "frase":"Todos os dias temos a oportunidade de aprender ou ensinar...",
       "funcao":"Consultor Contabilidade",
+      "email":"erika.alice@telefonica.com",
       "url":"/assets/fotos/Erika.jpg",
       "atribuicao":["Projetos Estruturantes","Comitê de Ofertas","Demandas PPs","Demandas Internas - PPs","NP&S","Fluxo P&S"]
     },

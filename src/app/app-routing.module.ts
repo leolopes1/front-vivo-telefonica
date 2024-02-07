@@ -21,6 +21,7 @@ import { ResponsabilidadesComponent } from './quem-somos/responsabilidades/respo
 import { ProcessosComponent } from './processos/processos.component';
 import { BibliotecaComponent } from './processos/biblioteca/biblioteca.component';
 import { HistoricoReleaseComponent } from './fique-por-dentro/historico-release/historico-release.component';
+import { AvisosComponent } from './fique-por-dentro/avisos/avisos.component';
 
 
 
@@ -43,7 +44,8 @@ const routes: Routes = [
   { path: 'calendario', component: CalendarioComponent, },
   { path: 'processos', component: ProcessosComponent, },
   { path: 'biblioteca', component: BibliotecaComponent, },
-  { path: 'release', component: HistoricoReleaseComponent, }
+  { path: 'release', component: HistoricoReleaseComponent, },
+  { path: 'fique-por-dentro/avisos', component: AvisosComponent, }
   
 
   
