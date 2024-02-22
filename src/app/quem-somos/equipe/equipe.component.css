@@ -33,7 +33,6 @@
     width: 300px;
     padding: 16px;
     z-index:3;
-
 }
 
 .cardTitle {
@@ -43,14 +42,11 @@
 }
 
 .example-card {
-    margin-bottom: 12px;
-    margin-top: 12px;
-}
-
-.example-card {
     max-width: 850px;
     height: 140px;
     overflow: hidden;
+    margin-bottom: 12px;
+    margin-top: 12px;
 
     border-radius: 30px;
     background: linear-gradient(to bottom right, rgba(217, 217, 217, 0.06) 7%, rgba(217, 217, 217, 0.00) 17%, rgba(0, 0, 0, 0.09) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(217, 217, 217, 0.06) 7%, rgba(217, 217, 217, 0.00) 17%, rgba(0, 0, 0, 0.09) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(217, 217, 217, 0.06) 7%, rgba(217, 217, 217, 0.00) 17%, rgba(0, 0, 0, 0.09) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(217, 217, 217, 0.06) 7%, rgba(217, 217, 217, 0.00) 17%, rgba(0, 0, 0, 0.09) 50%) top right / 50% 50% no-repeat;
@@ -185,7 +181,6 @@
 
 .boxColuna {
     margin-left: 50px;
-
 }
 
 .box-operacional {

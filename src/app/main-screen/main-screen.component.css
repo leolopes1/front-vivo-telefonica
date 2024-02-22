@@ -12,14 +12,14 @@
 
 .app-sidenav {
   width: 230px;
-  height: 100%;
+  min-height: 100%;
 
 
 }
 
 .app-sidenav-content {
 
-  height: 100%;
+  min-height: 100%;
   overflow: hidden;
   /* Hide scrollbars */
   padding: 12px;

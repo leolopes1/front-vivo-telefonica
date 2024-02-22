@@ -26,26 +26,26 @@ import { AvisosComponent } from './fique-por-dentro/avisos/avisos.component';
 
 
 const routes: Routes = [
-  { path: '', component: QuemSomosComponent, canActivate: [AuthGuard] }, 
-  { path: 'quem-somos', component: QuemSomosComponent, }, 
-  { path: 'quem-somos/missao', component: MissaoComponent, }, 
-  { path: 'quem-somos/equipe', component: EquipeComponent, }, 
-  { path: 'quem-somos/responsabilidades', component: ResponsabilidadesComponent, }, 
-  { path: 'homepage', component: FiquePorDentroComponent },
+  { path: '', component: LoginComponent},
+
+  { path: 'quem-somos', component: QuemSomosComponent,canActivate: [AuthGuard] }, 
+  { path: 'quem-somos/missao', component: MissaoComponent, canActivate: [AuthGuard] }, 
+  { path: 'quem-somos/equipe', component: EquipeComponent, canActivate: [AuthGuard] }, 
+  { path: 'quem-somos/responsabilidades', component: ResponsabilidadesComponent, canActivate: [AuthGuard] }, 
+  { path: 'homepage', component: FiquePorDentroComponent, canActivate: [AuthGuard]},
   { path: 'user-admin', component: UserAdminComponent,canActivate: [AuthGuard]},
-  { path: 'update-quem-somos', component: QuemSomosAdminComponent},
-  { path: 'login', component: LoginComponent},
+  { path: 'update-quem-somos', component: QuemSomosAdminComponent, canActivate: [AuthGuard]},
   { path: 'gerenciador-usuarios', component:GerenciadorUsuarioComponent, canActivate: [AuthGuard]},
-  { path: 'projetos', component:ProjetosComponent, },
-  { path: 'projetos/:id', component: ProjetosDetalheComponent, },
-  { path: 'criar-projeto', component: CriarProjetoComponent, },
-  { path: 'criar-biografia', component: CriacaoQuemSomosComponent, },
-  { path: 'projeto-duvida', component: ProjetosDuvidaComponent, },
-  { path: 'calendario', component: CalendarioComponent, },
-  { path: 'processos', component: ProcessosComponent, },
-  { path: 'biblioteca', component: BibliotecaComponent, },
-  { path: 'release', component: HistoricoReleaseComponent, },
-  { path: 'fique-por-dentro/avisos', component: AvisosComponent, }
+  { path: 'projetos', component:ProjetosComponent, canActivate: [AuthGuard] },
+  { path: 'projetos/:id', component: ProjetosDetalheComponent, canActivate: [AuthGuard] },
+  { path: 'criar-projeto', component: CriarProjetoComponent, canActivate: [AuthGuard] },
+  { path: 'criar-biografia', component: CriacaoQuemSomosComponent, canActivate: [AuthGuard]},
+  { path: 'projeto-duvida', component: ProjetosDuvidaComponent, canActivate: [AuthGuard]},
+  { path: 'calendario', component: CalendarioComponent,canActivate: [AuthGuard] },
+  { path: 'processos', component: ProcessosComponent,canActivate: [AuthGuard] },
+  { path: 'biblioteca', component: BibliotecaComponent, canActivate: [AuthGuard] },
+  { path: 'release', component: HistoricoReleaseComponent, canActivate: [AuthGuard] },
+  { path: 'fique-por-dentro/avisos', component: AvisosComponent,canActivate: [AuthGuard] }
   
 
   

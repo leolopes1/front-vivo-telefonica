@@ -9,7 +9,7 @@ import { DialogoService } from '../dialogo.service';
 })
 export class MainScreenComponent {
   mostrarMenu: boolean = false;
-  usuario: string = "Leonardo";
+  usuario: string = "Adm";
 
   constructor(private authService:AuthService, private dialogoService: DialogoService ){
 

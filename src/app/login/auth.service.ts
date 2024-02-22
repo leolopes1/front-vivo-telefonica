@@ -15,7 +15,7 @@ export class AuthService {
   constructor(private router: Router) { }
 
   fazerLogin(usuario: Usuario): Observable<any> {
-    if (usuario.nome === 'Leonardo' && usuario.senha === '123456') {
+    if (usuario.nome === 'Adm' && usuario.senha === '123456') {
       this.usuarioAutenticado = true;
       this.mostrarMenuEmitter.emit(true);
 
